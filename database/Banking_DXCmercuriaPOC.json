@@ -1,0 +1,27 @@
+{
+	"name": "Banking_DXCmercuriaPOC",
+	"properties": {
+		"Description": "DXCmercuriaPOC",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"DerivedModelDBInfo": "{\"ModelDirectives\":{\"BaseModel\":{\"Name\":\"Banking\",\"Version\":\"0.1.0\"}}}",
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://dxcmercuriagen2filesystempoc@dxcmercuriastoragegen.dfs.core.windows.net/Banking_DXCmercuriaPOC",
+			"Properties": {
+				"FormatType": "parquet",
+				"LinkedServiceName": "synapsesqladminuser-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "0cfeee09-ced9-4e4e-997c-49909551f5d7",
+		"Name": "Banking_DXCmercuriaPOC",
+		"EntityType": "DATABASE"
+	},
+	"type": "DATABASE"
+}
