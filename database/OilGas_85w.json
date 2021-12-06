@@ -1,0 +1,24 @@
+{
+	"name": "OilGas_85w",
+	"properties": {
+		"Description": "",
+		"Name": "OilGas_85w",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"DerivedModelDBInfo": "{\"ModelDirectives\":{\"BaseModel\":{\"Name\":\"OilGas\",\"Version\":\"0.1.0\"}}}",
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://dxcmercuriagen2filesystempoc@dxcmercuriastoragegen.dfs.core.windows.net/OilGas_85w",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "synapsesqladminuser-WorkspaceDefaultStorage"
+			}
+		}
+	},
+	"type": "DATABASE"
+}

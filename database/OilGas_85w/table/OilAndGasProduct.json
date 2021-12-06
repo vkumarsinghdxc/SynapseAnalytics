@@ -1,0 +1,2326 @@
+{
+	"name": "OilAndGasProduct",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "OilGas_85w"
+		},
+		"Name": "OilAndGasProduct",
+		"Description": "A product is anything that can be offered to a market that might satisfy a want or need by potential customers.    That product is the sum of all physical, psychological, symbolic, and service attributes associated with it.\n\nThere are two basic types of products:\n\n- Tangible (physical)\n- Intangible (non-physical) such as services\n\nA service is a non-material or intangible product - such as professional consultancy, maintenance service, repair service etc.\nEach product has its own benefits, application, brand name, and packaging that gives it its own identity and distinguishing characteristics.\n\nEvery business or organization has business rules that define precisely what a product is.    While we intuitively know what a product is, we must quantify that knowledge and associated business rules with consistent definitions that can be implemented within the organization in strategies and applications.\n\nA product typically goes through five stages of development:\n\n(1) Idea Stage - involving a thorough evaluation of the potential product\n\n(2) Concept Stage - determines customer acceptance by testing and presentation to consumers and distribution channel members.   Specific aspects regarding quality, dependability, reliability, warranty, packaging, service, pricing, terms of sale, sales and distribution channels, advertising and promotions are evaluated.\n\n(3) Product Development Stage - transforms the prototype product into an actual product for mass sale.   This stage requires close interaction between both marketing and manufacturing.\n\n(4) Test Marketing Stage - may or may not be used since it is an expensive and time-consuming process.  Test marketing involves evaluating various product options and alternatives.\n\n(5) Commercialization - It is very expensive to launch a new product so commercialization only applies to those specific products that are actually going to be sold to the market.\n\nProducts tend to be categorized as either:  Industrial goods and consumer goods\n\nIndustrial goods are used to produce other products .\n\nIndustrial goods may be further divided into:\n\n- Raw materials\n- Equipment\n- Pre-built materials \n- Supplies.\n\nConsumer goods are intended for consumption by the general public.\n\nConsumer goods may be further divided into:\n\n- Durable goods\n- Nondurable goods\n- Packaged goods\n\nA product may be a member of a product family or product line.\n\nA product family is a grouping of products or services that are related to each other by common function, functionality, design platform or similar characteristics.\n\nMembers of a product family frequently have many common parts and assemblies.\n\nProduct families are the highest level of grouping for forecasting, capacity planning or related functions.\n\nEx:\nThe Apple Macintosh family of products consists of the product lines:\n- Mac mini\n- MacBook Pro\n- Mac Pro\n\nA product line is a grouping of products that are closely related in usage, functionality or marketing characteristics.\n\nA Product Family typically is created to address one or five functions:\n\n1. To increase profits and not erode the sales of existing products\n\n2. To attract additional Markets or Market Segments\n\n3. To counter competitor's products\n\n4. To fill a gap in an existing Product Family.\n\n5. To promote sales of other products in the family line\n\nLine Depth refers to the number of products in the product line.\n\nLine consistency refers to how closely related the products are that make up the product line.\n\nLine vulnerability refers to the percentage of sales or profits that are derived from only a few products in the product line.\n\nProduct width refers to the number of different product lines sold by a company.\n\nProduct mix refers to the total number of products sold in all product lines.\n\nLine extension refers to the adding of a new product to a line.\n\n\"Trading up or brand leveraging\" refers to adding a product of better quality to a product line than the other products in that line.\n\n\"Trading down\" refers to adding a product of lesser quality to a product line than the other products in that line.\n\nIf a line of products is sold with the same brand name, this is referred to as family branding.\nStrategy and decisions regarding a product line are usually incorporated in a high-level marketing plan addressing product line strategy, sales, channels, distribution channels, pricing and related issues.\nA product-line manager is responsible for a product line and supervises several product managers who are responsible for individual products within the line.\nProduct-line managers typically have the following responsibilities:\n- Expansion and composition of a product line\n- Evaluate the effects of product mixes on the profitability of other items in the line\n- Planning and allocation of resources to individual products in the line\nA product is normally associated with a brand strategy - manufacturer, private or generic.\n\n1. Manufacturer-  or 'national' branding in which the brand is assigned by the manufacturer of the Product.\n\n2. Private - or 'dealer' branding in which the brand is assigned by the retailer or wholesaler of the Product.\n\n3. Generic - in which the Product is not marked with any identification.   Generic brands are a means for manufacturers to increase profits by saving on advertising, packaging or other costs associated with manufacturer or private branding.\n\nA brand is name, term, sign, symbol or design or a combination of these which identify the goods or services and differentiate them from those of competitors'\n\nA Trade mark is a brand or some part of the brand that is given legal protection because it is capable of exclusive appropriation and representation.\n\nManufacturers can use their own brands (known as Manufacturers' brands) or brands of their distributors (Distributors' brands).\n\nManufacturers/ distributors use brand names for a variety of reasons ranging from simple identification purposes to having legal protection for unique features of the products from imitations.\n\nBrands help consumers recognize certain quality parameters. In some cases, brands are just used to endow the product with unique story and character which itself can be a basis for product differentiation.\n\nIndividual brands have their own identity and the corporate or common name is not used to promote its equity.\n\nIndividual branding requires more expensive advertising and brand extensive brand creation investments.  By extension, each new brand does not benefit from the positive perceptions of earlier brands.\n\nBy contrast, family branding has several advantages.\n\nEach new product is quickly associated with the other products and brand in terms of quality and benefits.\n\nReduced or eliminated time for name identification and advertising for name recognition purposes.",
+		"EntityType": "TABLE",
+		"TableType": "EXTERNAL",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"StorageDescriptor": {
+			"Columns": [
+				{
+					"Name": "ProductId",
+					"Description": "The unique identifier of a Product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					}
+				},
+				{
+					"Name": "ProductName",
+					"Description": "The name of the Product, which normally corresponds to the 'marketing name' of the Product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductName"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductDescription",
+					"Description": "The description of the Product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductDescription"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 512,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductTradeName",
+					"Description": "The name by which the selling company references the chemical product.\n\nThe commercial name or trademark by which a chemical or product is known. \n\nOne chemical may have a variety of trade names depending on the manufacturers or distributors involved.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductTradeName"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductGenericName",
+					"Description": "The generic name by which the chemical is known.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductGenericName"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductInternalName",
+					"Description": "The internal name by which a Product is known.\n\nThis normally approximates the business name by which the public identifies the Product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductInternalName"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductSystematicName",
+					"Description": "The product systematic name.\n\nEx:\nEthanol",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductSystematicName"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductSymbol",
+					"Description": "A symbol by which the product is known.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductSymbol"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "binary",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "binary"
+						}
+					}
+				},
+				{
+					"Name": "ProductChemicalName",
+					"Description": "The scientific designation of a chemical in accordance with the nomenclature system developed by the International Union of Pure and Applied Chemistry (IUPAC) or the Chemical Abstracts Service (CAS) rules of nomenclature, or a name which will clearly identify the chemical for the purpose of conducting a hazard evaluation.\n\nEx:\nHematite(Fe2O3)\nMagnetite (Fe3O4)\nGoethite (FeO(OH))\nLimonite (FeO(OH).n(H20))\nSiderite (FeCO3)",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductChemicalName"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductSubstanceName",
+					"Description": "Ex.:\nSubstance Name                               CAS number  Symbol   Risk-phrases            Safety phrases\n\nACEPHATE                                      30560-19-1  Xn       22                      (2)-36\nACETAL                                        105-57-7    F,Xi     11-36/38                (2-)9-16-33\nACETALDEHYDE                                  75-07-0     F+,Xn    12-36/37-40             (2-)16-33-36/37\nACETAMIDE                                     60-35-5     Xn       40                      (2-)36/37\nACETIC ACID, conc.>90%                        64-19-7     C        10-35                   (1/2-)23-26-45 Note B\nACETIC ACID, conc. 25-3AMINE       2844-92-0   E,T+,N   1-26/27/28-33-51/53     (1/2-)28-36/37-45-61\nAMMONIUM CHLORIDE                             12125-02-9  Xn       22-36                   (2-)22",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductSubstanceName"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductBrandName",
+					"Description": "The \"brand name' is the part of the brand that can be spoken - such as \"Power Drill\".\n\nA \"brand\" is some combination of words, symbols or graphics that differentiates one product from another product.\n\nThe brand name is legally protected via trademarks and copyrights and differentiates a product from competitor's products and is a key component in pricing and promotional strategies.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductBrandName"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductBrandMark",
+					"Description": "The 'brand mark' is that part of the brand that can be recognized - such as a symbol that identifies a company or product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductBrandMark"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "binary",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "binary"
+						}
+					}
+				},
+				{
+					"Name": "ProductTrademark",
+					"Description": "A 'trademark' is a brand name or brand mark that is given legal protection.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductTrademark"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "binary",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "binary"
+						}
+					}
+				},
+				{
+					"Name": "ProductLogo",
+					"Description": "A design, symbol or series of words that identifies the product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductLogo"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "binary",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "binary"
+						}
+					}
+				},
+				{
+					"Name": "ProductChemicalFormula",
+					"Description": "The chemical formula of the product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductChemicalFormula"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 1024,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductChemicalStructure",
+					"Description": "The product chemical structure.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductChemicalStructure"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "binary",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "binary"
+						}
+					}
+				},
+				{
+					"Name": "ProductStraightRunProductIndicator",
+					"Description": "A product that has been distilled from crude oil but has not been through a process in which the composition has been chemically altered.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductStraightRunProductIndicator"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					}
+				},
+				{
+					"Name": "ProductIntroductionDate",
+					"Description": "The date a Product was introduced.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductIntroductionDate"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					}
+				},
+				{
+					"Name": "ProductPlannedAbandonmentDate",
+					"Description": "The planned date to discontinue marketing the product.    \n\nAbandonment is a component in the decline stage of the product's life cycle characterized by a reduced market demand for the product and an increased number of competing products with similar characteristics.\n\nThere are three (3) strategies for abandoning a product:\n\n(1)  Reduced marketing and expenditures to maintain profits.\n\n(2)  Concentrating on the strongest market segments and eliminating the weaker market segments\n\n(3)  Maintain the marketing level until the product is discontinued.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductPlannedAbandonmentDate"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					}
+				},
+				{
+					"Name": "ProductActualAbandonmentDate",
+					"Description": "The actual date that the marketing of the product was discontinued. \n\nAbandonment is a component in the decline stage of the product's life cycle characterized by a reduced market demand for the product and an increased number of competing products with similar characteristics.\n\nThere are three (3) strategies for abandoning a product:\n\n(1)  Reduced marketing and expenditures to maintain profits.\n\n(2)  Concentrating on the strongest market segments and eliminating the weaker market segments\n\n(3)  Maintain the marketing level until the product is discontinued.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductActualAbandonmentDate"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					}
+				},
+				{
+					"Name": "ProductDotProperShippingName",
+					"Description": "It is the preliminary step to determine labelling, marking and documentation requirements. In fact, the Proper Shipping Name is an essential element to identify the dangerous good (article, substance, mixture or even waste) on the outside of the package and on the Dangerous Goods Declaration.\n\nEx:\nEthane, Compressed",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductDotProperShippingName"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductEccnNumber",
+					"Description": "ECCNs are five character alpha-numeric designations used on the Commerce Control List (CCL) to identify dual-use items for export control purposes. An ECCN categorizes items based on the nature of the product, i.e. type of commodity, software, or technology and its respective technical parameters.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductEccnNumber"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductEpaNumber",
+					"Description": "The number assigned to chemicals regulated by the Environmental Protection Agency (EPA).",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductEpaNumber"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductEpaAcceptedDate",
+					"Description": "The date that the chemical product was registered and accepted for use by the EPA.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductEpaAcceptedDate"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					}
+				},
+				{
+					"Name": "ProductEinecsNumber",
+					"Description": "EINECS is an acronym for European Inventory of Existing Commercial Chemical Substances. \n\nThis organization is supported by the EC (European Commission). Many chemicals used in Europe are given an EINECS reference number, which has a similar function to the widely-used CAS number (though it has a different format).",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductEinecsNumber"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductCasNumber",
+					"Description": "A number assigned to each unique chemical entity by the Chemical Abstract Service of the American Chemical Society.\n\nC.A.S. NUMBER - Identifies a particular chemical by the Chemical Abstracts Service, a service of the American Chemical Society. The American Chemical Society indexes and compiles abstracts of worldwide chemical literature called Chemical Abstracts.\n\nEx:\nChemical:      KEROSENE\nCAS Number:    8008-20-6",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductCasNumber"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductRtecsNumber",
+					"Description": "RTECS number - A substance's identification number set by the US Registry of Toxic Effects of Chemical Substances",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductRtecsNumber"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductNaIdentificationNumber",
+					"Description": "An acronym for North America. A four-digit number assigned to some chemicals found in transport in North America.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductNaIdentificationNumber"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductUnIdentificationNumber",
+					"Description": "An international four digit number assigned to all hazardous materials regulated by the United Nations.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductUnIdentificationNumber"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductStccIdentificationNumber",
+					"Description": "An acronym for Standard Transportation Commodity Code. A seven digit identification number commonly used for materials shipped by rail. Numbers beginning with 49- are hazardous materials.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductStccIdentificationNumber"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductUniversalProductCode",
+					"Description": "A system that identifies products by type and by manufacturer.  \n\nA UPC consists of eleven (11) digits.  Six (6) indicate the Manufacturer and five (5) digits describe the product.\n\nUPCs appear on product packages as bar codes, which are graphic symbols that are read by optical scanner devices.   \n\nUPCs are assigned by the Uniform Code Council of Dayton, Ohio.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductUniversalProductCode"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Precision": 12,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					}
+				},
+				{
+					"Name": "ProductInformationLabelText",
+					"Description": "The label text that identifies the care, use, preparation and handling or the product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductInformationLabelText"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 1024,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductDescriptiveLabelText",
+					"Description": "The label text that describes significant characteristics and benefits.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductDescriptiveLabelText"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 1024,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductWarningInformationText",
+					"Description": "The text of the warning label, if any, appearing upon the product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductWarningInformationText"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 1024,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductGradeLabelText",
+					"Description": "The label text that identifies Product quality with letters, number or conditions.\n\nExamples:\n\n-  Grade A\n-  Prime\n-  #1",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductGradeLabelText"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 1024,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductGovernmentWarningLabelText",
+					"Description": "The US Government (or foreign government) label text that addressing the US legal requirements of the Product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductGovernmentWarningLabelText"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 1024,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductIdentificationOfSubstanceAndCompanyStatement",
+					"Description": "Identification of the substance/preparation and the company/undertaker,\n\nThe names and terms used for identification must be the same as those used on the actual label. There should be a specific identifier, such as a series of numbers and/or letters, for preparations which have the same name, in order to distinguish, for example, paints of different colors. \n\nThe name, address and telephone number of the manufacturer, importer or distributor are important for further information inquiries and are in many countries required by law.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductIdentificationOfSubstanceAndCompanyStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductCompositionAndInformationOnIngredientsStatement",
+					"Description": "The information on the ingredients enables the user to identify readily the relevant risks. For preparations it is not necessary to reveal the full composition. However, substances which are known to present a health hazard and substances for which an exposure limit value has been given should be included in the safety data sheet with an indication of the concentration range.\n\nTo identify the possible hazards of a substance, its chemical name should be compared with preferred names of dangerous substances from existing lists or data bases. \n\nTo identify the ingredient substances of a preparation other information besides the name of the substance may be included, for example, the Chemical Abstract Service number (CAS No) and/or the number given in the Register of Toxic Effects of Chemical Substances (RTECS) number and/or the number given in the European Inventory of Existing Commercial Chemical Substances (EINECS). \n\nEven if certain substances are to be kept confidential, their chemical nature and the potential hazards associated with that substance should be described. They should also have an unambiguous generic name.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductCompositionAndInformationOnIngredientsStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductHazardsIdentificationStatement",
+					"Description": "Hazard identification\nUnder this heading should be given brief and clear descriptions of the most important hazards the substance or the preparation creates for man, the environment or property. \n\nAlso the most important adverse human health effects and symptoms should be listed here. Furthermore, these should all be related to the use and possible misuse that can reasonably be foreseen. \n\nThis information should be compatible with that shown on the product label but need not repeat it.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductHazardsIdentificationStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductFirstAidMeasuresStatement",
+					"Description": "Describe the first aid measures, i.e. the actions to be taken immediately in case of overexposure to the chemical. \n\nIf immediate medical attention is required, it should be specified here. \n\nSubdivide the information according to the different routes of exposure under different subheadings: \n\n- exposure by inhalation  \n- exposure by skin and eye contact  \n- ingestion  \n\nFor some substances or preparations, special means should be available at the workplace to provide specific and immediate treatment. This should be mentioned under this heading. For example, workplaces handling hydrogen sulfide should have protective equipment in case of an emergency. Equipment for first aid treatment should be available and there should be training in its use.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductFirstAidMeasuresStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductFireFightingMeasuresStatement",
+					"Description": "The information provided here can be used to plan appropriate fire and emergency procedures. \n\nIndicate suitable extinguishing media, as well as incompatible extinguishing media that must not be used. For example in fires of organic solvents, such as toluene, foam, carbon dioxide or dry chemical, but not water, should be used. \n\nMention special exposure hazards caused by the substance or preparation, such as combustion products or released gases. The need for firefighters' special protective equipment should be specified, if necessary.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductFireFightingMeasuresStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductSpillageAndAccidentalReleaseMeasuresStatement",
+					"Description": "Describe here the relevant personal precautions based on the properties of the substance or the preparation. Precautions include the removal of ignition sources, control of dust, and prevention of skin or eye contact. Environmental precautions, such as keeping run-off away from drains, and the possible need to alert the neighborhood, should be included. Methods for clean-up, such as spraying of gases/fumes with water, dilution or use of absorbent material (sand, acid binder, sawdust...), should be placed here. \n\nConsider the need for indications such as 'never use', 'neutralize with ...'.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductSpillageAndAccidentalReleaseMeasuresStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductHandlingAndStorageStatement",
+					"Description": "Consider precautions to ensure safe handling and to advise the reader on technical measures, such as local and general ventilation, measures to prevent aerosol and dust formation, procedures or equipment which are prohibited or recommended, and, if possible, give a brief description of such procedures and/or equipment as electrical grounding of containers for flammable liquids. \n\nConsider also the conditions for safe storage, such as incompatible materials, storage temperature and humidity limit/range, light, inert gas and others. Pay attention to special electrical equipment and prevention of static electricity, and specific design for storage rooms or vessels. \n\nGive advice if needed on quantity limits for storage (compare with the list of chemicals with the potential to cause major hazards and the threshold quantities suggested there). In particular, indicate any special requirements such as the type of material to be used for the packing/container.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductHandlingAndStorageStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductExposureControlsAndPersonalProtectionStatement",
+					"Description": "Exposure controls/personal protection\nExposure control means here the full range of precautionary measures to be taken during the use of dangerous, classified substances and preparations needed in order to minimize worker exposure. \n\nEngineering measures should always precede personal protection. Information about system design, such as the need to enclose the process, which completes that already given under item 7, should be included here. \n\nInformation on recommended monitoring procedures (with the reference indicated) should also be provided here. \n\nWhere personal protection is needed, specify the type of equipment that provides adequate and suitable protection: \n\nfor respiratory protection specify adequate masks and the filter type  \nfor eye protection specify the type of protective equipment, such as safety glasses, safety goggles, face shield  \nfor hand protection specify the type and material of gloves to be worn when handling the substance or preparation. An example of the importance of choosing the right material is that polyvinyl alcohol (PVA) provides good protection against toluene diisocyanate but offers poor resistance to trichloroethylene.  \nfor skin protection specify the type and quality of equipment required, such as an apron, boots or full protective suit. Indicate also the specific hygiene measures, such as eating or smoking prohibition during handling, or washing methods.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductExposureControlsAndPersonalProtectionStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductPhysicalAndChemicalPropertiesStatement",
+					"Description": "Physical and chemical properties\nThe following information is important regarding the description of the properties of the substance or preparation. Add this whenever applicable. \n\nAppearance: -indicate physical state (solid, liquid, gas), and color. \n\nOdor: -if odor is perceptible, give a brief description \n\npH: -to provide an indication of acidic or alkaline (basic) properties, give the pH of the substance or preparation as supplied or that of an aqueous solution (in the latter case indicate the concentration).  pH is expressed on a scale from 0 to 14, which can be divided into the following ranges:  \n\npH 0-2 Strongly acidic  \npH 3-5 Weakly acidic  \npH 6-8 Neutral  \npH 9-10 Weakly basic  \npH 12-14 Strongly basic  \nSubstances or preparations with pH values 0-2 or 11.5-14 may be classified as corrosive. \n\nBoiling point/boiling range: -specify here the temperature at which the material changes from liquid to gas. If it decomposes without boiling, the temperature at which it decomposes may be given with the abbreviation 'dec.'. \n\nMelting point/melting range: -indicate the temperature at which the solid material changes to a liquid  \n\nFlash point: -the lowest temperature at which a liquid or solid produces enough vapor to form a flammable air-vapor mixture near its surface so that it can be ignited by a spark or flame at atmospheric pressure. \n\nFlammability: -describes the ability of the material to ignite and burn readily. A liquid or solid with a flash point above 21°C but less than 55°C is flammable. \n\nHighly flammable relates to substances or preparations with a flash point above 0°C but below 21°C, as well as to solids spontaneously flammable in air or which may readily ignite after brief contact with source of ignition and which continue to burn after removal of the source of ignition. \n\nExtremely flammable relates to liquids which have a flash point below 0°C and a boiling point below 35°C, and to flammable gases when liquefied.\n \nAutoflammability: -some materials have the feature of igniting in air in the absence of a spark or flame. The auto-ignition temperature can be found in the literature. \n\nExplosive properties: -specify, if appropriate, the concentrations for the lower and upper explosion limits. This is usually in volume percentage of air, for example, for xylene 1.1-7.0%, and for benzene 1.2-8.0%. \n\nOxidizing properties: -substances and preparations which can generate and maintain heat producing chemical reaction with other materials, especially burning flammable material. \n\nVapor pressure: -describes the tendency of a material to form a vapor. It is used e.g. for estimating the inhalation or fire hazards. Vapor pressure is expressed usually at the temperature of 20°C. \n\nRelative density: -the density of the substance or preparation compared to the density of water (= 1). This figure indicates whether the substance floats in water or sinks (when the relative density is more than 1). \n\nSolubility: -indicate here the solubility in water. If the solubility is not accurately known describe with words such as: poor, moderate, miscible,... \n\nPartition coefficient: - the ratio of the solubility of a substance or preparation in n-octanol to that in water. \n\nOther data: provide here data relevant for safety aspects, such as vapor density, evaporation rate, conductivity, viscosity, etc.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductPhysicalAndChemicalPropertiesStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductToxicologicalInformationStatement",
+					"Description": "This section deals with the need for concise but complete and comprehensible description of the various health effects which may arise. \nUse data on health effects based on both experiences and conclusions from scientific studies and on validated existing data sheets. \n\nInclude information on the possible routes of exposure (inhalation, ingestion, skin and eye contact), and describe the symptoms related to the physical, chemical and toxicological properties. \n\nInclude known immediate and delayed effects and also chronic effects from both short- and long-term exposure. These include allergy or cancer, potential mutagenic and reproductive health hazards, and narcotic effects. \n\nRefer, if relevant, to the information under heading '2. Composition/information on ingredients' and to specific health effects of certain components in the preparation.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductToxicologicalInformationStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductEcologicalInformationStatement",
+					"Description": "This section contains an assessment of the possible effects, behavior and environmental fate of the substance or preparation. \nDescribe the most important features that may have an impact on the environment: \n\n- mobility  \n- persistence and degradability  \n- bioaccumulative potential  \n- aquatic toxicity and other data, such as .  \n\nPay special attention to the properties of substances classified as being dangerous to the environment and which are present in the preparation, such as aerosols that contain halogenated hydrocarbons hazardous to the ozone layer.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductEcologicalInformationStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductDisposalConsiderationsStatement",
+					"Description": "Provide descriptions of safe methods of disposal of surplus or waste resulting from foreseeable use. The dangers involved in their disposal should also be considered. \n\nIndicate appropriate methods of disposal, e.g., incineration, recycling, landfill, both for the substance or preparation and for any contaminated packing. \n\nRefer to the provisions related to waste. It is useful to remind the user that national or regional provisions may be in force.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductDisposalConsiderationsStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductTransportInformationStatement",
+					"Description": "Indicate any special precautions with which the user might need to comply if the substance or preparation is transported within or outside his premises. \n\nRefer to additional information provided by the United Nations Recommendations on Transport of Dangerous Goods and other international agreements on the transport and packing requirements of dangerous goods. \n\nMention the UN transport hazard class and packing group when appropriate.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductTransportInformationStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductNationalRegulationsAndReferencesStatement",
+					"Description": "Local recommendations and national laws can be referred to under this section.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductNationalRegulationsAndReferencesStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductOtherInformationStatement",
+					"Description": "Indicate any other information which may be of importance for safety and health such as training advice, recommended uses and restrictions and sources of key data used to compile the data sheet in question. \n\nGive the date when the data sheet was issued, if this is not stated elsewhere.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductOtherInformationStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductMolecularWeight",
+					"Description": "The molecular weight of the product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductMolecularWeight"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Precision": 18,
+						"Scale": 8,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					}
+				},
+				{
+					"Name": "ProductMolecularFormula",
+					"Description": "Molecular formula of the product.\n\nEx:\nHematite(Fe2O3)\nMagnetite (Fe3O4)\nGoethite (FeO(OH))\nLimonite (FeO(OH).n(H20))\nSiderite (FeCO3)",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductMolecularFormula"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 1024,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductToxicityAssessmentStatement",
+					"Description": "This is the process of defining the nature of injuries that may be caused to an organism by exposure to a given chemical and the exposure concentration and time dependence of the chemically induced injuries. The aim of the assessment is to establish safe exposure concentration limits in relation to possible time of exposure.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductToxicityAssessmentStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductApplicationRestrictionsStatement",
+					"Description": "A statement of the appropriate application restrictions of the associated AG Chemical product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductApplicationRestrictionsStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductApprovedUsesStatement",
+					"Description": "A statement of the approved usages of the associated AG Chemical product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductApprovedUsesStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductEnvironmentalHazardsStatement",
+					"Description": "A statement of the environmental hazards of the associated AG Chemical product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductEnvironmentalHazardsStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductFirstAidStatements",
+					"Description": "A statement of the appropriate first aid treatments of measures for the associated AG Chemical product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductFirstAidStatements"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductGeneralInformationStatement",
+					"Description": "A general information statement associated with the AG Chemical product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductGeneralInformationStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductChronicEffectsOnHumansStatement",
+					"Description": "A statement regarding the chronic effects on humans of the product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductChronicEffectsOnHumansStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductToxicEffectsOnHumansStatement",
+					"Description": "A statement regarding the toxic effects on humans of the product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductToxicEffectsOnHumansStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductStabilityStatement",
+					"Description": "A statement regarding the stability of the product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductStabilityStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductConditionsOfInstabilityStatement",
+					"Description": "A statement regarding conditions of the instability of the product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductConditionsOfInstabilityStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductOdorStatement",
+					"Description": "A description of the odor of the associated AG Chemical product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductOdorStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductCorrosivityStatement",
+					"Description": "A statement regarding the corrosivity effects of the product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductCorrosivityStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductDisposalStatement",
+					"Description": "A statement regarding the disposal of the product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductDisposalStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductPrecautionsStatement",
+					"Description": "A statement regarding the precautionary requirements of the product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductPrecautionsStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductStorageStatement",
+					"Description": "A statement of the appropriate storage of the associated product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductStorageStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductHandlingProceduresStatement",
+					"Description": "A statement of the appropriate handling techniques for the associated product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductHandlingProceduresStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductPrecautionaryStatement",
+					"Description": "A precautionary statement for the associated product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductPrecautionaryStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductRisksOfUseStatement",
+					"Description": "A risks of usage statement for the associated product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductRisksOfUseStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductSpillPrecautionsStatement",
+					"Description": "A statement regarding the spill precautions of the product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductSpillPrecautionsStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductSpillPersonalProtectionStatement",
+					"Description": "A statement regarding spill personal protection in regard to the product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductSpillPersonalProtectionStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductLeaksActionStatement",
+					"Description": "A statement of the appropriate action and risks involved in leaks of the associated product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductLeaksActionStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductStorageAndDisposalStatement",
+					"Description": "A statement of the appropriate storage and disposal of the product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductStorageAndDisposalStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductUserSafetyRecommendationsStatement",
+					"Description": "A statement of the appropriate safety recommendations for the associated product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductUserSafetyRecommendationsStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductTargetMarketStatement",
+					"Description": "A statement describing the target market segment to be addressed by the Product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductTargetMarketStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductExplosionHazardsStatement",
+					"Description": "A statement regarding the explosive risks associated with the product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductExplosionHazardsStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductFireFightingStatement",
+					"Description": "A statement regarding the fire fighting requirements associated with the product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductFireFightingStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductTransportationStatement",
+					"Description": "A statement of the appropriate transportation of the associated product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductTransportationStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductRegulatoryStatement",
+					"Description": "A statement of the regulatory requirements of the associated product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductRegulatoryStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductMinimumStorageTemperatureC",
+					"Description": "The minimum temperature at which the product may be stored in C.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductMinimumStorageTemperatureC"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductMaximumStorageTemperatureC",
+					"Description": "The maximum temperature at which the product may be stored in C.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductMaximumStorageTemperatureC"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductMinimumStorageHumidityPercentage",
+					"Description": "The minimum storage humidity that the product may be stored at.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductMinimumStorageHumidityPercentage"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Precision": 18,
+						"Scale": 8,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					}
+				},
+				{
+					"Name": "ProductMaximumStorageHumidityPercentage",
+					"Description": "The maximum storage humidity that the product may be stored at.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductMaximumStorageHumidityPercentage"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Precision": 18,
+						"Scale": 8,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					}
+				},
+				{
+					"Name": "ProductDensity",
+					"Description": "Density (g cm-3): 0.808",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductDensity"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductBoilingPointC",
+					"Description": "The temperature at which the vapor pressure of a liquid equals atmospheric pressure, or at which the liquid changes to a vapor. The boiling point is usually expressed in degrees Fahrenheit. If a flammable material has a low boiling point, it indicates a special fire hazard.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductBoilingPointC"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductMeltingPointC",
+					"Description": "The temperature at which a solid changes to a liquid. A melting range may be given for mixtures.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductMeltingPointC"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductOctaneRatingRon",
+					"Description": "Spark ignition engines are designed to burn gasoline in a controlled process called deflagration. However, the unburned mixture may autoignite by detonating from pressure and heat alone, rather than ignite from the spark plug at exactly the right time. This causes a rapid pressure rise which can damage the engine. This is often referred to as engine knocking or end-gas knock. Knocking can be reduced by increasing the gasoline's resistance to autoignition, which is expressed by its octane rating.\n\nOctane rating is measured relative to a mixture of 2,2,4-trimethylpentane (an isomer of octane) and n-heptane. There are different conventions for expressing octane ratings, so the same physical fuel may have several different octane ratings based on the measure used. One of the best known is the research octane number (RON).\n\nThe octane rating of typical commercially available gasoline varies by country. In Finland, Sweden, and Norway, 95 RON is the standard for regular unleaded gasoline and 98 RON is also available as a more expensive option. In the UK, ordinary regular unleaded gasoline is 95 RON (commonly available), premium unleaded gasoline is always 97 RON, and super unleaded is usually 97-98 RON.[citation needed] However, both Shell and BP produce fuel at 102 RON for cars with high-performance engines and in 2006 the supermarket chain Tesco began to sell super unleaded gasoline rated at 99 RON. In the US, octane ratings in unleaded fuels can vary between 85[13] and 87 AKI (91-92 RON) for regular, through 89-90 AKI (94-95 RON) for mid-grade (equivalent to European regular), up to 90-94 AKI (95-99 RON) for premium (European premium).\n\nSouth Africa's largest city, Johannesburg, is located on the Highveld at 1,753 meters (5,751 ft) above sea level. So the South African AA recommends 95 octane gasoline (petrol) at low altitude and 93 octane for use in Johannesburg because \"The higher the altitude the lower the air pressure, and the lower the need for a high octane fuel as there is no real performance gain\".[14]\n\nThe octane rating became important as the military sought higher output for aircraft engines in the late 1930s and the 1940s. A higher octane rating allows a higher compression ratio or supercharger boost, and thus higher temperatures and pressures, which translate to higher power output. Some scientists even predicted that a nation with a good supply of high octane gasoline would have the advantage in air power. In 1943, the Rolls-Royce Merlin aero engine produced 1,320 horsepower (984 kW) using 100 RON fuel from a modest 27 liter displacement. By the time of Operation Overlord during World War II both the RAF and USAAF were conducting some operations in Europe using 150 RON fuel (100/150 avgas), obtained by adding 2.5% aniline to 100 octane avgas.[15] By this time the Rolls-Royce Merlin 66 was developing 2,000 hp using this fuel.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductOctaneRatingRon"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductEnergyContentMjKg",
+					"Description": "Energy is obtained from the combustion of gasoline by the conversion of a hydrocarbon to carbon dioxide and water. The combustion of octane follows this reaction:\n\n2 C8H18 + 25 O2 ? 16 CO2 + 18 H2O\nGasoline contains about 46.7 MJ/kg (127 MJ/US gal, 35.3 kWh/US gal, 13.0 kWh/kg, 120,405 BTU/US gal) quoting the lower heating value. [16] Gasoline blends differ, and therefore actual energy content varies according to the season and producer by up to 1.75% more or less than the average.[17] On average, about 74 L of gasoline (19.5 US gal, 16.3 imp gal) are available from a barrel of crude oil (about 46% by volume), varying due to quality of crude and grade of gasoline. The remainder are products ranging from tar to naphtha.[18]\n\nA high-octane-rated fuel, such as liquefied petroleum gas (LPG) has an overall lower power output at the typical 10:1 compression ratio of a gasoline engine. However, with an engine tuned to the use of LPG (i.e. via higher compression ratios, such as 12:1 instead of 10:1), the power output can be improved. This is because higher-octane fuels allow for a higher compression ratio without knocking, resulting in a higher cylinder temperature, which improves efficiency. Also, increased mechanical efficiency is created by a higher compression ratio through the concomitant higher expansion ratio on the power stroke, which is by far the greater effect. The higher expansion ratio extracts more work from the high-pressure gas created by the combustion process. An Atkinson cycle engine uses the timing of the valve events to produce the benefits of a high expansion ratio without the disadvantages, chiefly detonation, of a high compression ratio. A high expansion ratio is also one of the two key reasons for the efficiency of diesel engines, along with the elimination of pumping losses due to throttling of the intake air flow.\n\nThe lower energy content (per liter) of LPG in comparison to gasoline is due mainly to its lower density. Energy content per kilogram is higher than for gasoline (higher hydrogen to carbon ratio, for an example see Standard enthalpy of formation).\n\nMolecular weights of the above reagents are C8H18 114, O2 32, CO2 44, H2O 18; therefore 1 kg of fuel reacts with 3.51 kg of oxygen to produce 3.09 kg of carbon dioxide and 1.42 kg of water.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductEnergyContentMjKg"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductDensityKgL",
+					"Description": "The density of gasoline ranges from 0.71-0.77 kg/L (719.7 kg/m3 ; 0.026 lb./in3; 6.073 lb./US gal; 7.29 lb./imp gal), higher densities having a greater volume of aromatics.[19] Since gasoline floats on water, water cannot generally be used to extinguish a gasoline fire unless used in a fine mist. Finished marketable gasoline is traded with a standard reference of 0.755 kg/L, and its price is escalated/de-escalated according to its actual density.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductDensityKgL"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductCetaneNumber",
+					"Description": "The principal measure of diesel fuel quality is its cetane number. A cetane number is a measure of the delay of ignition of a diesel fuel.[21] A higher cetane number indicates that the fuel ignites more readily when sprayed into hot compressed air.[21] European (EN 590 standard) road diesel has a minimum cetane number of 51. Fuels with higher cetane numbers, normally \"premium\" diesel fuels with additional cleaning agents and some synthetic content, are available in some markets.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductCetaneNumber"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductSulfurContentPpm",
+					"Description": "The sulfur content in PPM.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductSulfurContentPpm"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductFlashPointMinimumRangeC",
+					"Description": "The product minimum flash point in C.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductFlashPointMinimumRangeC"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductFlashPointMaximumRangeC",
+					"Description": "The product maximum flash point in C.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductFlashPointMaximumRangeC"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductPourPointMinimumRangeC",
+					"Description": "The product minimum pour point in C.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductPourPointMinimumRangeC"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductPourPointMaximumRangeC",
+					"Description": "The product maximum pour point in C.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductPourPointMaximumRangeC"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductCombustionMinimumRangeC",
+					"Description": "The product minimum combustion range in C.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductCombustionMinimumRangeC"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductCombustionMaximumRangeC",
+					"Description": "The product maximum combustion range in C.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductCombustionMaximumRangeC"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductFreezingPointC",
+					"Description": "The product freezing point in C.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductFreezingPointC"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductMaximumStoragePeriodWeeks",
+					"Description": "The maximum storage period in weeks of the product.\n\nQuality gasoline should be stable for six months if stored properly but gasoline will break down slowly over time due to the separation of the components.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductMaximumStoragePeriodWeeks"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductRecommendedExposureLevelMgM38HourPeriod",
+					"Description": "The recommended exposure level to the product in MG/cubic/8 hour period.\n\nEx:  Kerosene\nPeople can be exposed to kerosene in the workplace by breathing it in, swallowing it, skin contact, and eye contact. The National Institute for Occupational Safety and Health (NIOSH) has set a Recommended exposure limit (REL) of 100 mg/m3 over an 8-hour workday.[45]",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductRecommendedExposureLevelMgM38HourPeriod"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Precision": 3,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					}
+				},
+				{
+					"Name": "ProductLiquefactionStatement",
+					"Description": "Liquefaction is the transition process of a cargo from a solid state to a viscous fluid state by which all or part of the cargo can flatten out to form a fluid surface. In this form the liquefied cargo may (unexpectedly start to) flow from one side of the ship's cargo hold to the other. In naval architecture this is called a \"free surface effect\", which causes a dramatic reduce of the ship's metacentric height (GM) or stability. The effect primarily increases with the width of the hold, the free surface moment thereby defined as the resultant from the formula: \n\nFSM = 1/12 * length * width3\n\nAs a consequence, the effect of the hold width over which the liquid can flow has a reduction effect on the ship's stability, by the third power. The process of liquefaction, results from compacting of the cargo during transit as a result of the vibrations and motions which inherently occur during a seagoing voyage. Liquefaction will not occur if the moisture content of the ore to be shipped is sufficiently low. The exact moisture amount for each product or origin of product cannot be given as this largely depends on a range of other factors, amongst which composition and particle size. The following terms are applicable when considering cargoes liable to liquefaction:",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductLiquefactionStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductLiquefactionRatioFsm",
+					"Description": "Liquefaction is the transition process of a cargo from a solid state to a viscous fluid state by which all or part of the cargo can flatten out to form a fluid surface. In this form the liquefied cargo may (unexpectedly start to) flow from one side of the ship's cargo hold to the other. In naval architecture this is called a \"free surface effect\", which causes a dramatic reduce of the ship's metacentric height (GM) or stability. The effect primarily increases with the width of the hold, the free surface moment thereby defined as the resultant from the formula: \n\nFSM = 1/12 * length * width3\n\nAs a consequence, the effect of the hold width over which the liquid can flow has a reduction effect on the ship's stability, by the third power. The process of liquefaction, results from compacting of the cargo during transit as a result of the vibrations and motions which inherently occur during a seagoing voyage. Liquefaction will not occur if the moisture content of the ore to be shipped is sufficiently low. The exact moisture amount for each product or origin of product cannot be given as this largely depends on a range of other factors, amongst which composition and particle size. The following terms are applicable when considering cargoes liable to liquefaction:",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductLiquefactionRatioFsm"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Precision": 18,
+						"Scale": 8,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					}
+				},
+				{
+					"Name": "ProductFlowMoisturePointFmp",
+					"Description": "This is the lowest moisture content at which liquefaction can occur. Only a laboratory test can determine the Flow Moisture Point.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductFlowMoisturePointFmp"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductTransportableMoistureLimitTml",
+					"Description": "The numerical TML value is calculated at 0,9 times the FMP value.   It is the result of a simple formula and not determined in the laboratory (except than for the FMP value as indicated above). The 10% margin between the TML and the FMP is to provide for a safety margin (measurement uncertainties etc.)",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductTransportableMoistureLimitTml"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductMoistureLimitMl",
+					"Description": "Moisture limit (ML)\nThis is the actual moisture content of a (representative) sample from the stockpile or part of the cargo to be loaded.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductMoistureLimitMl"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductPatentNumber",
+					"Description": "The patent that is associated with the Product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductPatentNumber"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 12,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductPatentDate",
+					"Description": "The date that the Patent was granted.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductPatentDate"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					}
+				},
+				{
+					"Name": "ProductPatentExpirationDate",
+					"Description": "The date that the patent is scheduled to expire.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductPatentExpirationDate"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					}
+				},
+				{
+					"Name": "ProductLicensorName",
+					"Description": "The name of the company that receives a flat fee or royalty for selling the rights to use a trademark, Patent, manufacturing right or process for the Product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductLicensorName"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductEligibleForExportIndicator",
+					"Description": "Indicates that the Product is eligible for export to foreign countries without restriction.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductEligibleForExportIndicator"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					}
+				},
+				{
+					"Name": "ProductExportRestrictionIndicator",
+					"Description": "Indicates that exportation of the product is restricted.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductExportRestrictionIndicator"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					}
+				},
+				{
+					"Name": "ProductExportRestrictionStartDate",
+					"Description": "The period start date for which the associated restriction is in effect.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductExportRestrictionStartDate"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					}
+				},
+				{
+					"Name": "ProductExportRestrictionEndDate",
+					"Description": "The period end date for which the associated restriction is in effect.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductExportRestrictionEndDate"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					}
+				},
+				{
+					"Name": "ProductExportRestrictionStatement",
+					"Description": "A statement defining the export restriction(s) placed upon the Product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductExportRestrictionStatement"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ItemSku",
+					"Description": "The Stock Keeping Unit identifier, which is typically used for inventory-related activities.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ItemSku"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 20,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "NfpaReactivityRatingId",
+					"Description": "The unique identifier of a NFPA Reactivity Rating.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "NfpaReactivityRatingId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "UnHazardCode",
+					"Description": "The unique identifier of a UN Hazard Code.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "UnHazardCode"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 1024,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "DotHazardCode",
+					"Description": "The unique identifier of a DOT Hazard Code.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "DotHazardCode"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 1024,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "DangerousGoodsPackingGroupId",
+					"Description": "The unique identifier of a Dangerous Goods Packing Group.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "DangerousGoodsPackingGroupId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "NfpaHealthRatingId",
+					"Description": "The unique identifier of a NFPA Health Rating.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "NfpaHealthRatingId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "UnDangerousGoodsClassId",
+					"Description": "The unique identifier of a UN Dangerous Goods Class.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "UnDangerousGoodsClassId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "NfpaFlammabilityRatingId",
+					"Description": "The unique identifier of a NFPA Flammability Rating.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "NfpaFlammabilityRatingId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductTypeId",
+					"Description": "The unique identifier of a Product Type.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductTypeId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "CorrosiveQualityId",
+					"Description": "The unique identifier of a corrosive quality.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "CorrosiveQualityId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "OdorConcentrationTypeId",
+					"Description": "The unique identifier of an odor concentration type.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "OdorConcentrationTypeId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "OdorHedonicToneTypeId",
+					"Description": "The unique identifier of an odor hedonic tone type.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "OdorHedonicToneTypeId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "OdorIntensityTypeId",
+					"Description": "The unique identifier of an odor intensity type.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "OdorIntensityTypeId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "OdorQualityTypeId",
+					"Description": "The unique identifier of an odor quality type.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "OdorQualityTypeId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductFormId",
+					"Description": "The unique identifier of a product form.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductFormId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductGradeId",
+					"Description": "The unique identifier of a product grade.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductGradeId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductStructureId",
+					"Description": "The unique identifier of a product structure.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductStructureId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductClassificationId",
+					"Description": "The unique identifier of a product classification.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductClassificationId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "PrimaryBrandId",
+					"Description": "The unique identifier of a Brand.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "PrimaryBrandId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ProductNote",
+					"Description": "A note, comment or additional information regarding the product.",
+					"BaseAttributeReference": {
+						"Entity": "OilAndGasProduct.cdm.json/OilAndGasProduct",
+						"Name": "ProductNote"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 1024,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				}
+			],
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://dxcmercuriagen2filesystempoc@dxcmercuriastoragegen.dfs.core.windows.net/OilGas_85w/OilAndGasProduct",
+					"delimiter": ",",
+					"multiLine": "false",
+					"firstRowAsHeader": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"quote": "\"",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://dxcmercuriagen2filesystempoc@dxcmercuriastoragegen.dfs.core.windows.net/OilGas_85w/OilAndGasProduct",
+				"Properties": {
+					"LinkedServiceName": "synapsesqladminuser-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"ProductId\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductId\"},\"ProductName\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductName\"},\"ProductDescription\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductDescription\"},\"ProductTradeName\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductTradeName\"},\"ProductGenericName\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductGenericName\"},\"ProductInternalName\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductInternalName\"},\"ProductSystematicName\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductSystematicName\"},\"ProductSymbol\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductSymbol\"},\"ProductChemicalName\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductChemicalName\"},\"ProductSubstanceName\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductSubstanceName\"},\"ProductBrandName\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductBrandName\"},\"ProductBrandMark\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductBrandMark\"},\"ProductTrademark\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductTrademark\"},\"ProductLogo\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductLogo\"},\"ProductChemicalFormula\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductChemicalFormula\"},\"ProductChemicalStructure\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductChemicalStructure\"},\"ProductStraightRunProductIndicator\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductStraightRunProductIndicator\"},\"ProductIntroductionDate\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductIntroductionDate\"},\"ProductPlannedAbandonmentDate\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductPlannedAbandonmentDate\"},\"ProductActualAbandonmentDate\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductActualAbandonmentDate\"},\"ProductDotProperShippingName\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductDotProperShippingName\"},\"ProductEccnNumber\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductEccnNumber\"},\"ProductEpaNumber\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductEpaNumber\"},\"ProductEpaAcceptedDate\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductEpaAcceptedDate\"},\"ProductEinecsNumber\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductEinecsNumber\"},\"ProductCasNumber\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductCasNumber\"},\"ProductRtecsNumber\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductRtecsNumber\"},\"ProductNaIdentificationNumber\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductNaIdentificationNumber\"},\"ProductUnIdentificationNumber\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductUnIdentificationNumber\"},\"ProductStccIdentificationNumber\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductStccIdentificationNumber\"},\"ProductUniversalProductCode\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductUniversalProductCode\"},\"ProductInformationLabelText\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductInformationLabelText\"},\"ProductDescriptiveLabelText\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductDescriptiveLabelText\"},\"ProductWarningInformationText\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductWarningInformationText\"},\"ProductGradeLabelText\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductGradeLabelText\"},\"ProductGovernmentWarningLabelText\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductGovernmentWarningLabelText\"},\"ProductIdentificationOfSubstanceAndCompanyStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductIdentificationOfSubstanceAndCompanyStatement\"},\"ProductCompositionAndInformationOnIngredientsStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductCompositionAndInformationOnIngredientsStatement\"},\"ProductHazardsIdentificationStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductHazardsIdentificationStatement\"},\"ProductFirstAidMeasuresStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductFirstAidMeasuresStatement\"},\"ProductFireFightingMeasuresStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductFireFightingMeasuresStatement\"},\"ProductSpillageAndAccidentalReleaseMeasuresStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductSpillageAndAccidentalReleaseMeasuresStatement\"},\"ProductHandlingAndStorageStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductHandlingAndStorageStatement\"},\"ProductExposureControlsAndPersonalProtectionStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductExposureControlsAndPersonalProtectionStatement\"},\"ProductPhysicalAndChemicalPropertiesStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductPhysicalAndChemicalPropertiesStatement\"},\"ProductToxicologicalInformationStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductToxicologicalInformationStatement\"},\"ProductEcologicalInformationStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductEcologicalInformationStatement\"},\"ProductDisposalConsiderationsStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductDisposalConsiderationsStatement\"},\"ProductTransportInformationStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductTransportInformationStatement\"},\"ProductNationalRegulationsAndReferencesStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductNationalRegulationsAndReferencesStatement\"},\"ProductOtherInformationStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductOtherInformationStatement\"},\"ProductMolecularWeight\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductMolecularWeight\"},\"ProductMolecularFormula\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductMolecularFormula\"},\"ProductToxicityAssessmentStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductToxicityAssessmentStatement\"},\"ProductApplicationRestrictionsStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductApplicationRestrictionsStatement\"},\"ProductApprovedUsesStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductApprovedUsesStatement\"},\"ProductEnvironmentalHazardsStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductEnvironmentalHazardsStatement\"},\"ProductFirstAidStatements\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductFirstAidStatements\"},\"ProductGeneralInformationStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductGeneralInformationStatement\"},\"ProductChronicEffectsOnHumansStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductChronicEffectsOnHumansStatement\"},\"ProductToxicEffectsOnHumansStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductToxicEffectsOnHumansStatement\"},\"ProductStabilityStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductStabilityStatement\"},\"ProductConditionsOfInstabilityStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductConditionsOfInstabilityStatement\"},\"ProductOdorStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductOdorStatement\"},\"ProductCorrosivityStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductCorrosivityStatement\"},\"ProductDisposalStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductDisposalStatement\"},\"ProductPrecautionsStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductPrecautionsStatement\"},\"ProductStorageStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductStorageStatement\"},\"ProductHandlingProceduresStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductHandlingProceduresStatement\"},\"ProductPrecautionaryStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductPrecautionaryStatement\"},\"ProductRisksOfUseStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductRisksOfUseStatement\"},\"ProductSpillPrecautionsStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductSpillPrecautionsStatement\"},\"ProductSpillPersonalProtectionStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductSpillPersonalProtectionStatement\"},\"ProductLeaksActionStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductLeaksActionStatement\"},\"ProductStorageAndDisposalStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductStorageAndDisposalStatement\"},\"ProductUserSafetyRecommendationsStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductUserSafetyRecommendationsStatement\"},\"ProductTargetMarketStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductTargetMarketStatement\"},\"ProductExplosionHazardsStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductExplosionHazardsStatement\"},\"ProductFireFightingStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductFireFightingStatement\"},\"ProductTransportationStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductTransportationStatement\"},\"ProductRegulatoryStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductRegulatoryStatement\"},\"ProductMinimumStorageTemperatureC\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductMinimumStorageTemperatureC\"},\"ProductMaximumStorageTemperatureC\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductMaximumStorageTemperatureC\"},\"ProductMinimumStorageHumidityPercentage\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductMinimumStorageHumidityPercentage\"},\"ProductMaximumStorageHumidityPercentage\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductMaximumStorageHumidityPercentage\"},\"ProductDensity\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductDensity\"},\"ProductBoilingPointC\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductBoilingPointC\"},\"ProductMeltingPointC\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductMeltingPointC\"},\"ProductOctaneRatingRon\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductOctaneRatingRon\"},\"ProductEnergyContentMjKg\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductEnergyContentMjKg\"},\"ProductDensityKgL\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductDensityKgL\"},\"ProductCetaneNumber\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductCetaneNumber\"},\"ProductSulfurContentPpm\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductSulfurContentPpm\"},\"ProductFlashPointMinimumRangeC\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductFlashPointMinimumRangeC\"},\"ProductFlashPointMaximumRangeC\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductFlashPointMaximumRangeC\"},\"ProductPourPointMinimumRangeC\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductPourPointMinimumRangeC\"},\"ProductPourPointMaximumRangeC\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductPourPointMaximumRangeC\"},\"ProductCombustionMinimumRangeC\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductCombustionMinimumRangeC\"},\"ProductCombustionMaximumRangeC\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductCombustionMaximumRangeC\"},\"ProductFreezingPointC\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductFreezingPointC\"},\"ProductMaximumStoragePeriodWeeks\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductMaximumStoragePeriodWeeks\"},\"ProductRecommendedExposureLevelMgM38HourPeriod\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductRecommendedExposureLevelMgM38HourPeriod\"},\"ProductLiquefactionStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductLiquefactionStatement\"},\"ProductLiquefactionRatioFsm\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductLiquefactionRatioFsm\"},\"ProductFlowMoisturePointFmp\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductFlowMoisturePointFmp\"},\"ProductTransportableMoistureLimitTml\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductTransportableMoistureLimitTml\"},\"ProductMoistureLimitMl\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductMoistureLimitMl\"},\"ProductPatentNumber\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductPatentNumber\"},\"ProductPatentDate\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductPatentDate\"},\"ProductPatentExpirationDate\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductPatentExpirationDate\"},\"ProductLicensorName\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductLicensorName\"},\"ProductEligibleForExportIndicator\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductEligibleForExportIndicator\"},\"ProductExportRestrictionIndicator\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductExportRestrictionIndicator\"},\"ProductExportRestrictionStartDate\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductExportRestrictionStartDate\"},\"ProductExportRestrictionEndDate\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductExportRestrictionEndDate\"},\"ProductExportRestrictionStatement\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductExportRestrictionStatement\"},\"ItemSku\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ItemSku\"},\"NfpaReactivityRatingId\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"NfpaReactivityRatingId\"},\"UnHazardCode\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"UnHazardCode\"},\"DotHazardCode\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"DotHazardCode\"},\"DangerousGoodsPackingGroupId\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"DangerousGoodsPackingGroupId\"},\"NfpaHealthRatingId\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"NfpaHealthRatingId\"},\"UnDangerousGoodsClassId\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"UnDangerousGoodsClassId\"},\"NfpaFlammabilityRatingId\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"NfpaFlammabilityRatingId\"},\"ProductTypeId\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductTypeId\"},\"CorrosiveQualityId\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"CorrosiveQualityId\"},\"OdorConcentrationTypeId\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"OdorConcentrationTypeId\"},\"OdorHedonicToneTypeId\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"OdorHedonicToneTypeId\"},\"OdorIntensityTypeId\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"OdorIntensityTypeId\"},\"OdorQualityTypeId\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"OdorQualityTypeId\"},\"ProductFormId\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductFormId\"},\"ProductGradeId\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductGradeId\"},\"ProductStructureId\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductStructureId\"},\"ProductClassificationId\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductClassificationId\"},\"PrimaryBrandId\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"PrimaryBrandId\"},\"ProductNote\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductNote\"}}}"
+			},
+			"Compressed": false,
+			"IsStoredAsSubdirectories": false
+		},
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"OilAndGasProduct\",\"path\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\"},\"description\":\"A product is anything that can be offered to a market that might satisfy a want or need by potential customers.    That product is the sum of all physical, psychological, symbolic, and service attributes associated with it.\\n\\nThere are two basic types of products:\\n\\n- Tangible (physical)\\n- Intangible (non-physical) such as services\\n\\nA service is a non-material or intangible product - such as professional consultancy, maintenance service, repair service etc.\\nEach product has its own benefits, application, brand name, and packaging that gives it its own identity and distinguishing characteristics.\\n\\nEvery business or organization has business rules that define precisely what a product is.    While we intuitively know what a product is, we must quantify that knowledge and associated business rules with consistent definitions that can be implemented within the organization in strategies and applications.\\n\\nA product typically goes through five stages of development:\\n\\n(1) Idea Stage - involving a thorough evaluation of the potential product\\n\\n(2) Concept Stage - determines customer acceptance by testing and presentation to consumers and distribution channel members.   Specific aspects regarding quality, dependability, reliability, warranty, packaging, service, pricing, terms of sale, sales and distribution channels, advertising and promotions are evaluated.\\n\\n(3) Product Development Stage - transforms the prototype product into an actual product for mass sale.   This stage requires close interaction between both marketing and manufacturing.\\n\\n(4) Test Marketing Stage - may or may not be used since it is an expensive and time-consuming process.  Test marketing involves evaluating various product options and alternatives.\\n\\n(5) Commercialization - It is very expensive to launch a new product so commercialization only applies to those specific products that are actually going to be sold to the market.\\n\\nProducts tend to be categorized as either:  Industrial goods and consumer goods\\n\\nIndustrial goods are used to produce other products .\\n\\nIndustrial goods may be further divided into:\\n\\n- Raw materials\\n- Equipment\\n- Pre-built materials \\n- Supplies.\\n\\nConsumer goods are intended for consumption by the general public.\\n\\nConsumer goods may be further divided into:\\n\\n- Durable goods\\n- Nondurable goods\\n- Packaged goods\\n\\nA product may be a member of a product family or product line.\\n\\nA product family is a grouping of products or services that are related to each other by common function, functionality, design platform or similar characteristics.\\n\\nMembers of a product family frequently have many common parts and assemblies.\\n\\nProduct families are the highest level of grouping for forecasting, capacity planning or related functions.\\n\\nEx:\\nThe Apple Macintosh family of products consists of the product lines:\\n- Mac mini\\n- MacBook Pro\\n- Mac Pro\\n\\nA product line is a grouping of products that are closely related in usage, functionality or marketing characteristics.\\n\\nA Product Family typically is created to address one or five functions:\\n\\n1. To increase profits and not erode the sales of existing products\\n\\n2. To attract additional Markets or Market Segments\\n\\n3. To counter competitor's products\\n\\n4. To fill a gap in an existing Product Family.\\n\\n5. To promote sales of other products in the family line\\n\\nLine Depth refers to the number of products in the product line.\\n\\nLine consistency refers to how closely related the products are that make up the product line.\\n\\nLine vulnerability refers to the percentage of sales or profits that are derived from only a few products in the product line.\\n\\nProduct width refers to the number of different product lines sold by a company.\\n\\nProduct mix refers to the total number of products sold in all product lines.\\n\\nLine extension refers to the adding of a new product to a line.\\n\\n\\\"Trading up or brand leveraging\\\" refers to adding a product of better quality to a product line than the other products in that line.\\n\\n\\\"Trading down\\\" refers to adding a product of lesser quality to a product line than the other products in that line.\\n\\nIf a line of products is sold with the same brand name, this is referred to as family branding.\\nStrategy and decisions regarding a product line are usually incorporated in a high-level marketing plan addressing product line strategy, sales, channels, distribution channels, pricing and related issues.\\nA product-line manager is responsible for a product line and supervises several product managers who are responsible for individual products within the line.\\nProduct-line managers typically have the following responsibilities:\\n- Expansion and composition of a product line\\n- Evaluate the effects of product mixes on the profitability of other items in the line\\n- Planning and allocation of resources to individual products in the line\\nA product is normally associated with a brand strategy - manufacturer, private or generic.\\n\\n1. Manufacturer-  or 'national' branding in which the brand is assigned by the manufacturer of the Product.\\n\\n2. Private - or 'dealer' branding in which the brand is assigned by the retailer or wholesaler of the Product.\\n\\n3. Generic - in which the Product is not marked with any identification.   Generic brands are a means for manufacturers to increase profits by saving on advertising, packaging or other costs associated with manufacturer or private branding.\\n\\nA brand is name, term, sign, symbol or design or a combination of these which identify the goods or services and differentiate them from those of competitors'\\n\\nA Trade mark is a brand or some part of the brand that is given legal protection because it is capable of exclusive appropriation and representation.\\n\\nManufacturers can use their own brands (known as Manufacturers' brands) or brands of their distributors (Distributors' brands).\\n\\nManufacturers/ distributors use brand names for a variety of reasons ranging from simple identification purposes to having legal protection for unique features of the products from imitations.\\n\\nBrands help consumers recognize certain quality parameters. In some cases, brands are just used to endow the product with unique story and character which itself can be a basis for product differentiation.\\n\\nIndividual brands have their own identity and the corporate or common name is not used to promote its equity.\\n\\nIndividual branding requires more expensive advertising and brand extensive brand creation investments.  By extension, each new brand does not benefit from the positive perceptions of earlier brands.\\n\\nBy contrast, family branding has several advantages.\\n\\nEach new product is quickly associated with the other products and brand in terms of quality and benefits.\\n\\nReduced or eliminated time for name identification and advertising for name recognition purposes.\",\"primaryKey\":[\"ProductId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"name\":\"ProductId\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductId\"},\"dataType\":\"long\"},{\"type\":\"Existing\",\"name\":\"ProductName\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductName\"},\"dataType\":\"string\",\"dataTypeLength\":128},{\"type\":\"Existing\",\"name\":\"ProductDescription\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductDescription\"},\"dataType\":\"string\",\"dataTypeLength\":512},{\"type\":\"Existing\",\"name\":\"ProductTradeName\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductTradeName\"},\"dataType\":\"string\",\"dataTypeLength\":128},{\"type\":\"Existing\",\"name\":\"ProductGenericName\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductGenericName\"},\"dataType\":\"string\",\"dataTypeLength\":128},{\"type\":\"Existing\",\"name\":\"ProductInternalName\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductInternalName\"},\"dataType\":\"string\",\"dataTypeLength\":128},{\"type\":\"Existing\",\"name\":\"ProductSystematicName\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductSystematicName\"},\"dataType\":\"string\",\"dataTypeLength\":128},{\"type\":\"Existing\",\"name\":\"ProductSymbol\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductSymbol\"},\"dataType\":\"binary\"},{\"type\":\"Existing\",\"name\":\"ProductChemicalName\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductChemicalName\"},\"dataType\":\"string\",\"dataTypeLength\":128},{\"type\":\"Existing\",\"name\":\"ProductSubstanceName\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductSubstanceName\"},\"dataType\":\"string\",\"dataTypeLength\":128},{\"type\":\"Existing\",\"name\":\"ProductBrandName\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductBrandName\"},\"dataType\":\"string\",\"dataTypeLength\":128},{\"type\":\"Existing\",\"name\":\"ProductBrandMark\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductBrandMark\"},\"dataType\":\"binary\"},{\"type\":\"Existing\",\"name\":\"ProductTrademark\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductTrademark\"},\"dataType\":\"binary\"},{\"type\":\"Existing\",\"name\":\"ProductLogo\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductLogo\"},\"dataType\":\"binary\"},{\"type\":\"Existing\",\"name\":\"ProductChemicalFormula\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductChemicalFormula\"},\"dataType\":\"string\",\"dataTypeLength\":1024},{\"type\":\"Existing\",\"name\":\"ProductChemicalStructure\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductChemicalStructure\"},\"dataType\":\"binary\"},{\"type\":\"Existing\",\"name\":\"ProductStraightRunProductIndicator\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductStraightRunProductIndicator\"},\"dataType\":\"boolean\"},{\"type\":\"Existing\",\"name\":\"ProductIntroductionDate\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductIntroductionDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\"},{\"type\":\"Existing\",\"name\":\"ProductPlannedAbandonmentDate\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductPlannedAbandonmentDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\"},{\"type\":\"Existing\",\"name\":\"ProductActualAbandonmentDate\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductActualAbandonmentDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\"},{\"type\":\"Existing\",\"name\":\"ProductDotProperShippingName\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductDotProperShippingName\"},\"dataType\":\"string\",\"dataTypeLength\":128},{\"type\":\"Existing\",\"name\":\"ProductEccnNumber\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductEccnNumber\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductEpaNumber\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductEpaNumber\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductEpaAcceptedDate\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductEpaAcceptedDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\"},{\"type\":\"Existing\",\"name\":\"ProductEinecsNumber\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductEinecsNumber\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductCasNumber\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductCasNumber\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductRtecsNumber\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductRtecsNumber\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductNaIdentificationNumber\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductNaIdentificationNumber\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductUnIdentificationNumber\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductUnIdentificationNumber\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductStccIdentificationNumber\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductStccIdentificationNumber\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductUniversalProductCode\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductUniversalProductCode\"},\"dataType\":\"decimal\",\"dataTypeLength\":12,\"scale\":0},{\"type\":\"Existing\",\"name\":\"ProductInformationLabelText\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductInformationLabelText\"},\"dataType\":\"string\",\"dataTypeLength\":1024},{\"type\":\"Existing\",\"name\":\"ProductDescriptiveLabelText\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductDescriptiveLabelText\"},\"dataType\":\"string\",\"dataTypeLength\":1024},{\"type\":\"Existing\",\"name\":\"ProductWarningInformationText\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductWarningInformationText\"},\"dataType\":\"string\",\"dataTypeLength\":1024},{\"type\":\"Existing\",\"name\":\"ProductGradeLabelText\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductGradeLabelText\"},\"dataType\":\"string\",\"dataTypeLength\":1024},{\"type\":\"Existing\",\"name\":\"ProductGovernmentWarningLabelText\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductGovernmentWarningLabelText\"},\"dataType\":\"string\",\"dataTypeLength\":1024},{\"type\":\"Existing\",\"name\":\"ProductIdentificationOfSubstanceAndCompanyStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductIdentificationOfSubstanceAndCompanyStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductCompositionAndInformationOnIngredientsStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductCompositionAndInformationOnIngredientsStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductHazardsIdentificationStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductHazardsIdentificationStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductFirstAidMeasuresStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductFirstAidMeasuresStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductFireFightingMeasuresStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductFireFightingMeasuresStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductSpillageAndAccidentalReleaseMeasuresStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductSpillageAndAccidentalReleaseMeasuresStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductHandlingAndStorageStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductHandlingAndStorageStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductExposureControlsAndPersonalProtectionStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductExposureControlsAndPersonalProtectionStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductPhysicalAndChemicalPropertiesStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductPhysicalAndChemicalPropertiesStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductToxicologicalInformationStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductToxicologicalInformationStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductEcologicalInformationStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductEcologicalInformationStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductDisposalConsiderationsStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductDisposalConsiderationsStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductTransportInformationStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductTransportInformationStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductNationalRegulationsAndReferencesStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductNationalRegulationsAndReferencesStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductOtherInformationStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductOtherInformationStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductMolecularWeight\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductMolecularWeight\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"scale\":8},{\"type\":\"Existing\",\"name\":\"ProductMolecularFormula\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductMolecularFormula\"},\"dataType\":\"string\",\"dataTypeLength\":1024},{\"type\":\"Existing\",\"name\":\"ProductToxicityAssessmentStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductToxicityAssessmentStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductApplicationRestrictionsStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductApplicationRestrictionsStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductApprovedUsesStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductApprovedUsesStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductEnvironmentalHazardsStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductEnvironmentalHazardsStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductFirstAidStatements\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductFirstAidStatements\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductGeneralInformationStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductGeneralInformationStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductChronicEffectsOnHumansStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductChronicEffectsOnHumansStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductToxicEffectsOnHumansStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductToxicEffectsOnHumansStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductStabilityStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductStabilityStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductConditionsOfInstabilityStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductConditionsOfInstabilityStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductOdorStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductOdorStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductCorrosivityStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductCorrosivityStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductDisposalStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductDisposalStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductPrecautionsStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductPrecautionsStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductStorageStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductStorageStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductHandlingProceduresStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductHandlingProceduresStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductPrecautionaryStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductPrecautionaryStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductRisksOfUseStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductRisksOfUseStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductSpillPrecautionsStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductSpillPrecautionsStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductSpillPersonalProtectionStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductSpillPersonalProtectionStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductLeaksActionStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductLeaksActionStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductStorageAndDisposalStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductStorageAndDisposalStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductUserSafetyRecommendationsStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductUserSafetyRecommendationsStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductTargetMarketStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductTargetMarketStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductExplosionHazardsStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductExplosionHazardsStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductFireFightingStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductFireFightingStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductTransportationStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductTransportationStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductRegulatoryStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductRegulatoryStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductMinimumStorageTemperatureC\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductMinimumStorageTemperatureC\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductMaximumStorageTemperatureC\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductMaximumStorageTemperatureC\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductMinimumStorageHumidityPercentage\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductMinimumStorageHumidityPercentage\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"scale\":8},{\"type\":\"Existing\",\"name\":\"ProductMaximumStorageHumidityPercentage\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductMaximumStorageHumidityPercentage\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"scale\":8},{\"type\":\"Existing\",\"name\":\"ProductDensity\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductDensity\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductBoilingPointC\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductBoilingPointC\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductMeltingPointC\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductMeltingPointC\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductOctaneRatingRon\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductOctaneRatingRon\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductEnergyContentMjKg\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductEnergyContentMjKg\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductDensityKgL\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductDensityKgL\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductCetaneNumber\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductCetaneNumber\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductSulfurContentPpm\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductSulfurContentPpm\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductFlashPointMinimumRangeC\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductFlashPointMinimumRangeC\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductFlashPointMaximumRangeC\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductFlashPointMaximumRangeC\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductPourPointMinimumRangeC\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductPourPointMinimumRangeC\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductPourPointMaximumRangeC\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductPourPointMaximumRangeC\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductCombustionMinimumRangeC\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductCombustionMinimumRangeC\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductCombustionMaximumRangeC\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductCombustionMaximumRangeC\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductFreezingPointC\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductFreezingPointC\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductMaximumStoragePeriodWeeks\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductMaximumStoragePeriodWeeks\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductRecommendedExposureLevelMgM38HourPeriod\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductRecommendedExposureLevelMgM38HourPeriod\"},\"dataType\":\"decimal\",\"dataTypeLength\":3,\"scale\":0},{\"type\":\"Existing\",\"name\":\"ProductLiquefactionStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductLiquefactionStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ProductLiquefactionRatioFsm\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductLiquefactionRatioFsm\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"scale\":8},{\"type\":\"Existing\",\"name\":\"ProductFlowMoisturePointFmp\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductFlowMoisturePointFmp\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductTransportableMoistureLimitTml\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductTransportableMoistureLimitTml\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductMoistureLimitMl\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductMoistureLimitMl\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductPatentNumber\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductPatentNumber\"},\"dataType\":\"string\",\"dataTypeLength\":12},{\"type\":\"Existing\",\"name\":\"ProductPatentDate\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductPatentDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\"},{\"type\":\"Existing\",\"name\":\"ProductPatentExpirationDate\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductPatentExpirationDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\"},{\"type\":\"Existing\",\"name\":\"ProductLicensorName\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductLicensorName\"},\"dataType\":\"string\",\"dataTypeLength\":128},{\"type\":\"Existing\",\"name\":\"ProductEligibleForExportIndicator\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductEligibleForExportIndicator\"},\"dataType\":\"boolean\"},{\"type\":\"Existing\",\"name\":\"ProductExportRestrictionIndicator\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductExportRestrictionIndicator\"},\"dataType\":\"boolean\"},{\"type\":\"Existing\",\"name\":\"ProductExportRestrictionStartDate\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductExportRestrictionStartDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\"},{\"type\":\"Existing\",\"name\":\"ProductExportRestrictionEndDate\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductExportRestrictionEndDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\"},{\"type\":\"Existing\",\"name\":\"ProductExportRestrictionStatement\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductExportRestrictionStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ItemSku\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ItemSku\"},\"dataType\":\"string\",\"dataTypeLength\":20},{\"type\":\"Existing\",\"name\":\"NfpaReactivityRatingId\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"NfpaReactivityRatingId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"UnHazardCode\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"UnHazardCode\"},\"dataType\":\"string\",\"dataTypeLength\":1024},{\"type\":\"Existing\",\"name\":\"DotHazardCode\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"DotHazardCode\"},\"dataType\":\"string\",\"dataTypeLength\":1024},{\"type\":\"Existing\",\"name\":\"DangerousGoodsPackingGroupId\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"DangerousGoodsPackingGroupId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"NfpaHealthRatingId\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"NfpaHealthRatingId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"UnDangerousGoodsClassId\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"UnDangerousGoodsClassId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"NfpaFlammabilityRatingId\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"NfpaFlammabilityRatingId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductTypeId\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductTypeId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"CorrosiveQualityId\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"CorrosiveQualityId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"OdorConcentrationTypeId\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"OdorConcentrationTypeId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"OdorHedonicToneTypeId\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"OdorHedonicToneTypeId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"OdorIntensityTypeId\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"OdorIntensityTypeId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"OdorQualityTypeId\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"OdorQualityTypeId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductFormId\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductFormId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductGradeId\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductGradeId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductStructureId\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductStructureId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductClassificationId\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductClassificationId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"PrimaryBrandId\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"PrimaryBrandId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ProductNote\",\"attributeReference\":{\"entity\":\"OilAndGasProduct.cdm.json/OilAndGasProduct\",\"name\":\"ProductNote\"},\"dataType\":\"string\",\"dataTypeLength\":1024}]}}}",
+			"Description": "A product is anything that can be offered to a market that might satisfy a want or need by potential customers.    That product is the sum of all physical, psychological, symbolic, and service attributes associated with it.\n\nThere are two basic types of products:\n\n- Tangible (physical)\n- Intangible (non-physical) such as services\n\nA service is a non-material or intangible product - such as professional consultancy, maintenance service, repair service etc.\nEach product has its own benefits, application, brand name, and packaging that gives it its own identity and distinguishing characteristics.\n\nEvery business or organization has business rules that define precisely what a product is.    While we intuitively know what a product is, we must quantify that knowledge and associated business rules with consistent definitions that can be implemented within the organization in strategies and applications.\n\nA product typically goes through five stages of development:\n\n(1) Idea Stage - involving a thorough evaluation of the potential product\n\n(2) Concept Stage - determines customer acceptance by testing and presentation to consumers and distribution channel members.   Specific aspects regarding quality, dependability, reliability, warranty, packaging, service, pricing, terms of sale, sales and distribution channels, advertising and promotions are evaluated.\n\n(3) Product Development Stage - transforms the prototype product into an actual product for mass sale.   This stage requires close interaction between both marketing and manufacturing.\n\n(4) Test Marketing Stage - may or may not be used since it is an expensive and time-consuming process.  Test marketing involves evaluating various product options and alternatives.\n\n(5) Commercialization - It is very expensive to launch a new product so commercialization only applies to those specific products that are actually going to be sold to the market.\n\nProducts tend to be categorized as either:  Industrial goods and consumer goods\n\nIndustrial goods are used to produce other products .\n\nIndustrial goods may be further divided into:\n\n- Raw materials\n- Equipment\n- Pre-built materials \n- Supplies.\n\nConsumer goods are intended for consumption by the general public.\n\nConsumer goods may be further divided into:\n\n- Durable goods\n- Nondurable goods\n- Packaged goods\n\nA product may be a member of a product family or product line.\n\nA product family is a grouping of products or services that are related to each other by common function, functionality, design platform or similar characteristics.\n\nMembers of a product family frequently have many common parts and assemblies.\n\nProduct families are the highest level of grouping for forecasting, capacity planning or related functions.\n\nEx:\nThe Apple Macintosh family of products consists of the product lines:\n- Mac mini\n- MacBook Pro\n- Mac Pro\n\nA product line is a grouping of products that are closely related in usage, functionality or marketing characteristics.\n\nA Product Family typically is created to address one or five functions:\n\n1. To increase profits and not erode the sales of existing products\n\n2. To attract additional Markets or Market Segments\n\n3. To counter competitor's products\n\n4. To fill a gap in an existing Product Family.\n\n5. To promote sales of other products in the family line\n\nLine Depth refers to the number of products in the product line.\n\nLine consistency refers to how closely related the products are that make up the product line.\n\nLine vulnerability refers to the percentage of sales or profits that are derived from only a few products in the product line.\n\nProduct width refers to the number of different product lines sold by a company.\n\nProduct mix refers to the total number of products sold in all product lines.\n\nLine extension refers to the adding of a new product to a line.\n\n\"Trading up or brand leveraging\" refers to adding a product of better quality to a product line than the other products in that line.\n\n\"Trading down\" refers to adding a product of lesser quality to a product line than the other products in that line.\n\nIf a line of products is sold with the same brand name, this is referred to as family branding.\nStrategy and decisions regarding a product line are usually incorporated in a high-level marketing plan addressing product line strategy, sales, channels, distribution channels, pricing and related issues.\nA product-line manager is responsible for a product line and supervises several product managers who are responsible for individual products within the line.\nProduct-line managers typically have the following responsibilities:\n- Expansion and composition of a product line\n- Evaluate the effects of product mixes on the profitability of other items in the line\n- Planning and allocation of resources to individual products in the line\nA product is normally associated with a brand strategy - manufacturer, private or generic.\n\n1. Manufacturer-  or 'national' branding in which the brand is assigned by the manufacturer of the Product.\n\n2. Private - or 'dealer' branding in which the brand is assigned by the retailer or wholesaler of the Product.\n\n3. Generic - in which the Product is not marked with any identification.   Generic brands are a means for manufacturers to increase profits by saving on advertising, packaging or other costs associated with manufacturer or private branding.\n\nA brand is name, term, sign, symbol or design or a combination of these which identify the goods or services and differentiate them from those of competitors'\n\nA Trade mark is a brand or some part of the brand that is given legal protection because it is capable of exclusive appropriation and representation.\n\nManufacturers can use their own brands (known as Manufacturers' brands) or brands of their distributors (Distributors' brands).\n\nManufacturers/ distributors use brand names for a variety of reasons ranging from simple identification purposes to having legal protection for unique features of the products from imitations.\n\nBrands help consumers recognize certain quality parameters. In some cases, brands are just used to endow the product with unique story and character which itself can be a basis for product differentiation.\n\nIndividual brands have their own identity and the corporate or common name is not used to promote its equity.\n\nIndividual branding requires more expensive advertising and brand extensive brand creation investments.  By extension, each new brand does not benefit from the positive perceptions of earlier brands.\n\nBy contrast, family branding has several advantages.\n\nEach new product is quickly associated with the other products and brand in terms of quality and benefits.\n\nReduced or eliminated time for name identification and advertising for name recognition purposes.",
+			"DisplayFolderInfo": "{\"name\":\"Product\",\"colorCode\":\"\"}",
+			"PrimaryKeys": "ProductId",
+			"spark.sql.sources.provider": "csv"
+		},
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false
+	},
+	"type": "TABLE"
+}
