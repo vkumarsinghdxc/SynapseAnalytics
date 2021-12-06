@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [ProductId]\n,[ProductName]\n,[ProductDescription]\n,[ProductShortDescription]\n,[ProductInternalName]\n,[ProductIntendedUse]\n,[ProductIntroductionDate]\n,[ProductFirstSaleDate]\n,[PlannedAbandonmentDate]\n,[ActualAbandonmentDate]\n,[ProductMinimumAmount]\n,[ProductMaximumAmount]\n,[ProductMinimumTerm]\n,[ProductMaximumTerm]\n,[UnitOfMeasureId]\n,[NetContentUomId]\n,[ProductNote]\n,[PerAccountInsuranceLimitAmount]\n,[InsuranceTypeId]\n,[GoverningLawState]\n,[CusipNumber]\n,[GlobalTradeItemNumber]\n,[GtinName]\n,[EuropeanArticleNumber]\n,[UniversalProductCode]\n,[ItemElectronicProductCode]\n,[ComponentPartIdentifier]\n,[ProductInformationContactTelephoneNumber]\n,[ProductInformationWwwUrl]\n,[CustomerServiceTelephoneNumber]\n,[PatentNumber]\n,[PatentDate]\n,[PatentExpirationDate]\n,[Trademark]\n,[ProductLogo]\n,[CopyrightNumber]\n,[CopyrightDate]\n,[ProductLicenserName]\n,[ProductExportRestrictionIndicator]\n,[ProductExportRestrictionStartDate]\n,[ProductExportRestrictionEndDate]\n,[ProductExportRestrictionDescription]\n,[ApprovalProcessStatement]\n,[LegalDisclosureStatement]\n,[PrivacyStatement]\n,[InformationSharingStatement]\n,[ProductAgreementCoverageStatement]\n,[AcceptanceOfAgreementStatement]\n,[RelationshipToOtherAgreementsStatement]\n,[ProductUsageStatement]\n,[ProductTermsAndConditionsStatement]\n,[ProductChargesStatement]\n,[PaymentCalculationStatement]\n,[ProductServiceHoursStatement]\n,[ChangesToAgreementStatement]\n,[ServiceCancellationStatement]\n,[DisclosureOfInformationStatement]\n,[LimitationOfLiabilityStatement]\n,[BankLiabilityStatement]\n,[ServiceLimitationsStatement]\n,[ChangesOrCancellationStatement]\n,[MinimumAgeToOpenAccount]\n,[MarketingMessageDescription]\n,[24HourInformationLineIndicator]\n,[OnLineBankingAvailableIndicator]\n,[MonthlyStatementsIndicator]\n,[AtmAccessIndicator]\n,[PhoneBankingIndicator]\n,[PrepaymentPenaltyIndicator]\n,[AccelerationClauseIndicator]\n,[ProductHasTrackingStatusAvailableIndicator]\n,[AccountToAccountTransfersIndicator]\n,[CoBrandedProductIndicator]\n,[ResponsibilityCenterId]\n,[CoBrandingOrganizationName]\n,[ProductTypeId]\n,[IsoCurrencyCode]\n,[ProductInsuranceTypeId]\n,[PrimaryBrandId]\n,[WarrantyId]\n,[PrimaryCountryOfOriginCountryId]\n FROM [Banking_DXCmercuriaPOC].[dbo].[BankingProduct]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "Banking_DXCmercuriaPOC",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
