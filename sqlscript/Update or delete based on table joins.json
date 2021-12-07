@@ -1,0 +1,17 @@
+{
+	"name": "Update or delete based on table joins",
+	"properties": {
+		"content": {
+			"query": "CREATE TABLE dbo.Table1\n    (ColA int NOT NULL, ColB decimal(10,3) NOT NULL);\nGO\nCREATE TABLE dbo.Table2\n    (ColA int NOT NULL, ColB decimal(10,3) NOT NULL);\nGO\nINSERT INTO dbo.Table1 VALUES(1, 10.0);\nINSERT INTO dbo.Table2 VALUES(1, 0.0);\nGO\n\nUPDATE dbo.Table2\nSET dbo.Table2.ColB = dbo.Table2.ColB + dbo.Table1.ColB\nFROM dbo.Table2\n    INNER JOIN dbo.Table1\n    ON (dbo.Table2.ColA = dbo.Table1.ColA);\n\nGO\nSELECT ColA, ColB\nFROM dbo.Table2;\nGO\n\nDELETE dbo.Table2\nFROM dbo.Table2\n    INNER JOIN dbo.Table1\nON (dbo.Table2.ColA = dbo.Table1.ColA)\nWHERE dbo.Table2.ColA = 1;\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SampleSQL",
+				"poolName": "SampleSQL"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
