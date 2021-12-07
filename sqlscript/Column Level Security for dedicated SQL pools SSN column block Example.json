@@ -1,0 +1,17 @@
+{
+	"name": "Column Level Security for dedicated SQL pools SSN column block Example",
+	"properties": {
+		"content": {
+			"query": "--Create Membership table with SSN column used to store social security numbers\nCREATE TABLE Membership\n  (MemberID int IDENTITY,\n   FirstName varchar(100) NULL,\n   SSN char(9) NOT NULL,\n   LastName varchar(100) NOT NULL,\n   Phone varchar(12) NULL,\n   Email varchar(100) NULL)\n\n--Allow TestUser to access all columns except for the SSN column, which has the sensitive data\nGRANT SELECT ON Membership(MemberID, FirstName, LastName, Phone, Email) TO TestUser;\n\n--Queries executed as TestUser will fail if they include the SSN column\nSELECT * FROM Membership;\n\n-- Msg 230, Level 14, State 1, Line 12\n-- The SELECT permission was denied on the column 'SSN' of the object 'Membership', database 'CLS_TestDW', schema 'dbo'.\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "Banking_DXCmercuriaPOC",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
