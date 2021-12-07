@@ -1,0 +1,17 @@
+{
+	"name": "Export data to Parquet files using CETAS",
+	"properties": {
+		"content": {
+			"query": "\n-- Create the database scoped credential. In this template, we are authenticating using storage account key\nCREATE DATABASE SCOPED CREDENTIAL <your_credential_name>\nWITH\n    IDENTITY = '<any_string>',\n    SECRET = '<your_storage_account_key>'\n;\n\n-- Create the external file format. In this template, we are exporting to Parquet files\nCREATE EXTERNAL FILE FORMAT <your_file_format_name>\nWITH (\n    FORMAT_TYPE = PARQUET,\n    DATA_COMPRESSION = 'org.apache.hadoop.io.compress.SnappyCodec'\n);\n\n-- Create the external data source. In this template, we are exporting to an ADLS Gen2 storage account\nCREATE EXTERNAL DATA SOURCE <your_data_source_name>\nWITH (\n    TYPE = HADOOP,\n    LOCATION='abfss://<container>@<storage_account>.dfs.core.windows.net',\n    CREDENTIAL = <your_credential_name>\n);\n\n-- Create the CETAS statement\nCREATE EXTERNAL TABLE LineItemExternalTable_SingleStringDelimited_1TB\nWITH (\n        LOCATION='<your_container_location>',\n        DATA_SOURCE = <your_data_source_name>,\n        FILE_FORMAT = your_file_format_name\n) AS\n\tSELECT * FROM <your_table_name>;\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SampleSQL",
+				"poolName": "SampleSQL"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
