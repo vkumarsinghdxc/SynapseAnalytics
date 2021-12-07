@@ -1,0 +1,17 @@
+{
+	"name": "Export data to a CSV file using CETAS",
+	"properties": {
+		"content": {
+			"query": "\n-- Create the database scoped credential. In this template, we are authenticating using storage account key\nCREATE DATABASE SCOPED CREDENTIAL <your_credential_name>\nWITH\n    IDENTITY = '<any_string>',\n    SECRET = '<your_storage_account_key>'\n;\n\n-- Create the external file format. In this template, we are exporting to a delimited text file\nCREATE EXTERNAL FILE FORMAT <your_file_format_name>\nWITH (\n\tFORMAT_TYPE = DELIMITEDTEXT,\n\tFORMAT_OPTIONS (FIELD_TERMINATOR = N',', USE_TYPE_DEFAULT = False, STRING_DELIMITER = '\"')\n)\n\n-- Create the external data source. In this template, we are exporting to an ADLS Gen2 storage account\nCREATE EXTERNAL DATA SOURCE <your_data_source_name>\nWITH (\n    TYPE = HADOOP,\n    LOCATION='abfss://<container>@<storage_account>.dfs.core.windows.net',\n    CREDENTIAL = <your_credential_name>\n);\n\n-- Create the CETAS statement\nCREATE EXTERNAL TABLE LineItemExternalTable_SingleStringDelimited_1TB\nWITH (\n        LOCATION='<your_container_location>',\n        DATA_SOURCE = <your_data_source_name>,\n        FILE_FORMAT = your_file_format_name\n) AS\n\t-- To write to a single file, specify the number of rows in your TOP clause that is larger than your query resultset.\n\t-- This example specifies the largest value supported  (9223372036854775807).\n    SELECT TOP 9223372036854775807 * FROM <your_table_name>;\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SampleSQL",
+				"poolName": "SampleSQL"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
