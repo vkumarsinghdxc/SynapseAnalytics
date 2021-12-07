@@ -1,0 +1,17 @@
+{
+	"name": "Basic queries to a Synapse Pool",
+	"properties": {
+		"content": {
+			"query": "-- Use SELECT to retrieve rows and columns\nSELECT *\nFROM DimEmployee\nORDER BY LastName;\n\n-- Use table aliasing to achieve the same result.\n\nSELECT e.*\nFROM DimEmployee AS e\nORDER BY LastName;\n\n-- Return only the rows for DimEmployee that have an EndDate that is not NULL and a MaritalStatus of 'M' (married).\n\nSELECT FirstName, LastName, StartDate AS FirstDay\nFROM DimEmployee\nWHERE EndDate IS NOT NULL\nAND MaritalStatus = 'M'\nORDER BY LastName;\n\n-- Use DISTINCT to generate a list of all unique titles in the DimEmployee table.\n\nSELECT DISTINCT Title\nFROM DimEmployee\nORDER BY Title;\n\n-- Use GROUP BY with multiple groups and where\nSELECT OrderDateKey, PromotionKey, AVG(SalesAmount) AS AvgSales, SUM(SalesAmount) AS TotalSales\nFROM FactInternetSales\nwhere OrderDateKey > '20020801'\nGROUP BY OrderDateKey, PromotionKey\nORDER BY OrderDateKey;\n\n-- Use the HAVING clause\nSELECT OrderDateKey, SUM(SalesAmount) AS TotalSales\nFROM FactInternetSales\nGROUP BY OrderDateKey\nHAVING OrderDateKey > 20010000\nORDER BY OrderDateKey;\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SampleSQL",
+				"poolName": "SampleSQL"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
