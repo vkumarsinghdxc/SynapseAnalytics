@@ -1,0 +1,17 @@
+{
+	"name": "Generate your COPY statement with dynamic SQL",
+	"properties": {
+		"content": {
+			"query": "\n-- Dropping the load stored procedure if it already exists\nIF OBJECT_ID('[dbo].[loadsp]', 'P') IS NOT NULL\n  DROP PROC dbo.loadsp;\n\n-- Dropping the sample target table is if already exists\nIF OBJECT_ID('[dbo].[Trip]', 'U') IS NOT NULL\n  DROP TABLE [dbo].[Trip];\nGO\n\n-- Creating the sample table\nCREATE TABLE [dbo].[Trip]\n(\n\t[DateID] [int] NOT NULL,\n\t[MedallionID] [int] NOT NULL,\n\t[HackneyLicenseID] [int] NOT NULL,\n\t[PickupTimeID] [int] NOT NULL,\n\t[DropoffTimeID] [int] NOT NULL,\n\t[PickupGeographyID] [int] NULL,\n\t[DropoffGeographyID] [int] NULL,\n\t[PickupLatitude] [float] NULL,\n\t[PickupLongitude] [float] NULL,\n\t[PickupLatLong] [varchar](50) NULL,\n\t[DropoffLatitude] [float] NULL,\n\t[DropoffLongitude] [float] NULL,\n\t[DropoffLatLong] [varchar](50) NULL,\n\t[PassengerCount] [int] NULL,\n\t[TripDurationSeconds] [int] NULL,\n\t[TripDistanceMiles] [float] NULL,\n\t[PaymentType] [varchar](50) NULL,\n\t[FareAmount] [money] NULL,\n\t[SurchargeAmount] [money] NULL,\n\t[TaxAmount] [money] NULL,\n\t[TipAmount] [money] NULL,\n\t[TollsAmount] [money] NULL,\n\t[TotalAmount] [money] NULL,\n\t[loadTime] [datetime2](7) NOT NULL\n)\nWITH\n(\n\tDISTRIBUTION = ROUND_ROBIN,\n\tCLUSTERED COLUMNSTORE INDEX\n);\n\nGO\n\nCREATE PROC dbo.loadsp @storagelocation nvarchar(100) AS\n    DECLARE @loadtime nvarchar(30);\n    SET @loadtime = GetDate();\n    DECLARE @COPY_statement nvarchar(4000);\n    SET @COPY_statement =\n        N'COPY INTO [dbo].[Trip]\n\t\t(\n\t\t\t[DateID] 1,\n\t\t\t[MedallionID] 2,\n\t\t\t[HackneyLicenseID] 3,\n\t\t\t[PickupTimeID] 4,\n\t\t\t[DropoffTimeID] 5,\n\t\t\t[PickupGeographyID] 6,\n\t\t\t[DropoffGeographyID] 7,\n\t\t\t[PickupLatitude] 8,\n\t\t\t[PickupLongitude] 9,\n\t\t\t[PickupLatLong] 10,\n\t\t\t[DropoffLatitude] 11,\n\t\t\t[DropoffLongitude] 12,\n\t\t\t[DropoffLatLong] 13,\n\t\t\t[PassengerCount] 14,\n\t\t\t[TripDurationSeconds] 15,\n\t\t\t[TripDistanceMiles] 16,\n\t\t\t[PaymentType] 17,\n\t\t\t[FareAmount] 18,\n\t\t\t[SurchargeAmount] 19,\n\t\t\t[TaxAmount] 20,\n\t\t\t[TipAmount] 21,\n\t\t\t[TollsAmount] 22,\n\t\t\t[TotalAmount] 23,\n\t\t\t[loadTime] default ''' + @loadtime + ''' 24\n\t)\n\t\tFROM '''  + @storagelocation + '''\n\t\tWITH (\n\t\t\tFIELDTERMINATOR=''|'',\n\t\t\tROWTERMINATOR=''0x0A''\n\t\t) OPTION (LABEL = ''loadTime: ' + @loadtime + ''');';\n\n        EXEC sp_executesql @COPY_statement;\nGO\n\nEXEC loadsp 'https://nytaxiblob.blob.core.windows.net/2013/Trip2013/';\n\n-- Preview 100 rows from the sample Trip table\nSELECT TOP 100 * FROM [dbo].[Trip];\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SampleSQL",
+				"poolName": "SampleSQL"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
