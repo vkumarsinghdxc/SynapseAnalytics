@@ -1,0 +1,17 @@
+{
+	"name": "Dynamic Data Masking for dedicated SQL pools",
+	"properties": {
+		"content": {
+			"query": "CREATE TABLE Membership\n(MemberID int IDENTITY,\n FirstName varchar(100) MASKED WITH (FUNCTION = 'partial(1,\"XXXXXXX\",0)') NULL,\n LastName varchar(100) NOT NULL,\n Phone varchar(12) MASKED WITH (FUNCTION = 'default()') NULL,\n Email varchar(100) MASKED WITH (FUNCTION = 'email()') NULL);\n\n--Insert sample data in the table\nINSERT Membership VALUES ('Roberto', 'Tamburello', '555.123.4567', 'RTamburello@contoso.com');\nINSERT Membership VALUES ('Janice', 'Galvin', '555.123.4568', 'JGalvin@contoso.com.co');\nINSERT Membership VALUES ('Zheng', 'Mu', '555.123.4569', 'ZMu@contoso.net');\nSELECT * FROM Membership;\n\n--A new user is created and granted SELECT permission on the table. Queries executed as the TestUser view masked data.\nCREATE USER TestUser WITHOUT LOGIN;\nGRANT SELECT ON Membership TO TestUser;\n\n--Test user permissions\nEXECUTE AS USER = 'TestUser';\nSELECT * FROM Membership;\nREVERT;\n\n--The following example adds a masking function to the LastName column\nALTER TABLE Membership\nALTER COLUMN LastName ADD MASKED WITH (FUNCTION = 'partial(2,\"XXX\",0)');\n\n--The following example changes a masking function on the LastName column\nALTER TABLE Membership\nALTER COLUMN LastName varchar(100) MASKED WITH (FUNCTION = 'default()');\n\n--Granting the UNMASK permission allows TestUser to see the data unmasked\nGRANT UNMASK TO TestUser;\nEXECUTE AS USER = 'TestUser';\nSELECT * FROM Membership;\nREVERT;\n\n-- Removing the UNMASK permission\nREVOKE UNMASK TO TestUser;\n\n--The following statement drops the mask on the LastName column created in the previous example\nALTER TABLE Membership\nALTER COLUMN LastName DROP MASKED;\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SampleSQL",
+				"poolName": "SampleSQL"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
