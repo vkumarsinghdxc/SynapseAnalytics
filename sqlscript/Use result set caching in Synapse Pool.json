@@ -1,0 +1,17 @@
+{
+	"name": "Use result set caching in Synapse Pool",
+	"properties": {
+		"content": {
+			"query": "-- Turn ON/OFF result set caching for a user database.  Run this command when connecting to the MASTER database\n\nALTER DATABASE [database_name]\nSET RESULT_SET_CACHING ON;\n\n-- Turn ON/OFF result set caching for a session\nSET RESULT_SET_CACHING { ON | OFF };\n\n-- Run this command to check if a query was executed with a result cache hit or miss. The result_cache_hit column returns 1 for cache hit,\n-- 0 for cache miss, and negative values for reasons why result set caching was not used. For details, check\n-- https://docs.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-pdw-exec-requests-transact-sql?view=aps-pdw-2016-au7\n\nSELECT request_id, command, result_cache_hit FROM sys.dm_pdw_exec_requests\nWHERE request_id = <'Your_Query_Request_ID'>\n\n\n-- Check the size of cached result set\nDBCC SHOWRESULTCACHESPACEUSED;\n\n-- Clean up the cache\nDBCC SHOWRESULTCACHESPACEUSED;\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SampleSQL",
+				"poolName": "SampleSQL"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
