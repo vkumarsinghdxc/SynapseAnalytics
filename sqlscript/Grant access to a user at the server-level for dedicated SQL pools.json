@@ -1,0 +1,17 @@
+{
+	"name": "Grant access to a user at the server-level for dedicated SQL pools",
+	"properties": {
+		"content": {
+			"query": "--1.a Create LOGIN for an Azure AD account.To create a login, you must be connected to the master database.\n\nCREATE USER [alias@domain.com] FROM EXTERNAL PROVIDER;\ngo\n--1.b Create a Login for a user. To create a login, you must be connected to the master database.\nCREATE LOGIN <login_alias> WITH PASSWORD = 'enter_your_password';\n\n\n--2.a Create USER for the Azure AD account\nuse yourdb -- Use your DB name\nCREATE USER alias FROM LOGIN [alias@domain.com]\n\n--2.b Create USER for a SQL Auth account\nCREATE USER <user_alias> FROM LOGIN <login_alias>\n\n--Example to add the user to the db_owner role\n\nEXEC sp_addrolemember 'db_owner', '<user_alias>';\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SampleSQL",
+				"poolName": "SampleSQL"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
