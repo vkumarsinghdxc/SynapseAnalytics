@@ -1,0 +1,17 @@
+{
+	"name": "Monitor the execution of your COPY statement",
+	"properties": {
+		"content": {
+			"query": "\n-- Creating a stored procedure to monitor a COPY execution and whether it's making progress\nIF OBJECT_ID('<your_schema>.monitor_loads') IS NULL\nEXEC (\n\t\t'CREATE PROCEDURE monitor_loads @label nvarchar(30) AS\n\t\tSELECT  r.[request_id]\n\t\t,       r.[status]\n\t\t,       r.resource_class\n\t\t,       r.command\n\t\t,       sum(bytes_processed) AS bytes_processed\n\t\t,       sum(rows_processed) AS rows_processed\n\t\tFROM    sys.dm_pdw_exec_requests r\n\t\t\t\t\t  JOIN sys.dm_pdw_dms_workers w\n\t\t\t\t\t\t\t ON r.[request_id] = w.request_id\n\t\tWHERE  [label] = @label and session_id <> session_id() and type = ''WRITER''\n\t\tGROUP BY r.[request_id]\n\t\t,       r.[status]\n\t\t,       r.resource_class\n\t\t,       r.command;'\n\n)\n-- Specify the label of your COPY statement and execute the stored procedure\nEXEC monitor_loads '<your_label_of_the_COPY_statement>';\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SampleSQL",
+				"poolName": "SampleSQL"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
