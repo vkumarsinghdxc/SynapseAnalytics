@@ -1,0 +1,17 @@
+{
+	"name": "Query memory usage",
+	"properties": {
+		"content": {
+			"query": "\n/* The script below lists the current queries executed against the SQL Data Warehouse\n    and the amount of granted, requested, and ideal memory. This script can be used to\n    help identify queries that would benefit from larger resource class assignments. The\n    statement returns the following columns:\n\n    request_id: Unique numeric id for the request.\n    resource_class: The resource class for the request.\n    command: The text of the request as submitted by the user\n    granted_memory_kb: Total amount of memory actually granted in kilobytes.\n    requested_memory_kb: Total requested amount of memory in kilobytes\n    ideal_memory_kb: Size, in kilobytes, of the memory grant to fit everything into physical\n                    memory. This is based on the cardinality estimate for the query.\n    requested_memory_gap: The difference in memory between the ideal and granted amounds. A value\n                         greater than 0 indicates a query that could use additional memory via\n                         a larger resource class.*/\nSELECT DISTINCT\n    pr.request_id,\n    pr.resource_class,\n    pr.command,\n    [mem].granted_memory_kb,\n    [mem].requested_memory_kb,\n    [mem].ideal_memory_kb,\n    CASE\n        WHEN ( [mem].ideal_memory_kb - [mem].granted_memory_kb ) < 0 THEN 0\n        ELSE ( [mem].ideal_memory_kb - [mem].granted_memory_kb )\n    END AS requested_memory_gap\nFROM\n    -- Get all pdw requests\n    sys.dm_pdw_exec_requests AS pr\n    -- For each request_id, add the associated SQL requests on the Compute nodes.\n    JOIN sys.dm_pdw_sql_requests AS psqlr ON psqlr.request_id = pr.request_id\n    -- Add in the memory grant information\n    JOIN sys.dm_pdw_nodes_exec_query_memory_grants AS [mem] ON [mem].[session_id] = psqlr.[spid]\nWHERE\n    1=1\n    AND\tpr.resource_class IS NOT NULL;\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SampleSQL",
+				"poolName": "SampleSQL"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
