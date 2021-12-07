@@ -1,0 +1,17 @@
+{
+	"name": "Grant access to a user to a single SQL dedicated database",
+	"properties": {
+		"content": {
+			"query": "--db_datareader and db_datawriter can work for read/write permissions if granting db_owner permission is undesired.\n--For a Spark user to read and write directly from Spark into/from a dedicated SQL pool, db_owner permission is required.\n\n--Create the user in the database by running the following command targeting the desired database in the context selector (dropdown to select databases)  for an Azure AD account:\n\nCREATE USER [<alias@domain.com>] FROM EXTERNAL PROVIDER;\n\n--Grant the user a role to access the database:\n\nEXEC sp_addrolemember 'db_owner', '<alias@domain.com>';\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SampleSQL",
+				"poolName": "SampleSQL"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
