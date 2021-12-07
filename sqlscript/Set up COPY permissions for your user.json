@@ -1,0 +1,17 @@
+{
+	"name": "Set up COPY permissions for your user",
+	"properties": {
+		"content": {
+			"query": "\n-- List the permissions for your user\nselect  princ.name\n,       princ.type_desc\n,       perm.permission_name\n,       perm.state_desc\n,       perm.class_desc\n,       object_name(perm.major_id)\nfrom    sys.database_principals princ\nleft join\n        sys.database_permissions perm\non      perm.grantee_principal_id = princ.principal_id\nwhere name = '<your_user_name>';\n\n--Make sure your user has the permissions to CREATE tables in the [dbo] schema\nGRANT CREATE TABLE TO <your_user_name>;\nGRANT ALTER ON SCHEMA::<your_target_table_schema> TO <your_user_name>;\n\n--Make sure your user has ADMINISTER DATABASE BULK OPERATIONS permissions\nGRANT ADMINISTER DATABASE BULK OPERATIONS TO <your_user_name>\n\n--Make sure your user has INSERT permissions on the target table\nGRANT INSERT ON <your_target_table> TO <your_user_name>\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SampleSQL",
+				"poolName": "SampleSQL"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
