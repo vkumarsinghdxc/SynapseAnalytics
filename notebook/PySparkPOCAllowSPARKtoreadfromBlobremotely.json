@@ -1,5 +1,5 @@
 {
-	"name": "POCAllowSPARKtoreadfromBlobremotelyAndSaveInTable",
+	"name": "PySparkPOCAllowSPARKtoreadfromBlobremotely",
 	"properties": {
 		"nbformat": 4,
 		"nbformat_minor": 2,
@@ -13,7 +13,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "184d33d4-7370-4cc5-a2e1-45ec4a9cf7ce"
+				"spark.autotune.trackingId": "19b33ff5-0574-4d4f-99b9-32df0fff4472"
 			}
 		},
 		"metadata": {
@@ -44,7 +44,7 @@
 					"    'fs.azure.sas.%s.%s.blob.core.windows.net' % (blob_container_name, blob_account_name),\n",
 					"    blob_sas_token)\n",
 					"df = spark.read.parquet(wasbs_path)\n",
-					"df.write.mode(\"overwrite\").saveAsTable(\"default.YourTableName\")"
+					"display(df.limit(10))"
 				],
 				"execution_count": null
 			}
