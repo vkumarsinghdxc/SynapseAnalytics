@@ -13,7 +13,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "bb9155cb-d2d2-4207-a754-f11e53b74051"
+				"spark.autotune.trackingId": "8592903a-b6dc-4404-ab48-34bd6c4c294d"
 			}
 		},
 		"metadata": {
@@ -31,6 +31,20 @@
 		"cells": [
 			{
 				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"microsoft": {
+						"language": "python"
+					}
+				},
 				"source": [
 					"%%pyspark\n",
 					"df = spark.sql(\"SELECT * FROM `Agriculture_h5o`.`AgricultureProduct`\")\n",
