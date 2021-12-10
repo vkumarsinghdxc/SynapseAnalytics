@@ -1,0 +1,10 @@
+{
+	"name": "ecdc-covid-19-cases",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"sasUri": "https://pandemicdatalake.blob.core.windows.net/public/curated/covid-19/ecdc_cases/latest/ecdc_cases.parquet?\"\""
+		}
+	}
+}
