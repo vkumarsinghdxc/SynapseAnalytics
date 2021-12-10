@@ -1,0 +1,24 @@
+{
+	"name": "Utilities_shm",
+	"properties": {
+		"Description": "",
+		"Name": "Utilities_shm",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"DerivedModelDBInfo": "{\"ModelDirectives\":{\"BaseModel\":{\"Name\":\"Utilities\",\"Version\":\"0.1.0\"}}}",
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://dxcmercuriagen2filesystempoc@dxcmercuriastoragegen.dfs.core.windows.net/Utilities_shm",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "synapsesqladminuser-WorkspaceDefaultStorage"
+			}
+		}
+	},
+	"type": "DATABASE"
+}
