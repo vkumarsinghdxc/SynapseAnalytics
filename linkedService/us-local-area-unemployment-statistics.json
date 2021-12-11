@@ -1,0 +1,10 @@
+{
+	"name": "us-local-area-unemployment-statistics",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"sasUri": "https://azureopendatastorage.blob.core.windows.net/laborstatisticscontainer/laus/?\"\""
+		}
+	}
+}
