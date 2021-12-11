@@ -1,0 +1,10 @@
+{
+	"name": "oxford-covid-19-government-response-tracker",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"sasUri": "https://pandemicdatalake.blob.core.windows.net/public/curated/covid-19/covid_policy_tracker/latest/covid_policy_tracker.parquet?\"\""
+		}
+	}
+}
