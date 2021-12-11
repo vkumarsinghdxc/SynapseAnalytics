@@ -1,0 +1,24 @@
+{
+	"name": "EnergyCommodityTrading_dot",
+	"properties": {
+		"Description": "",
+		"Name": "EnergyCommodityTrading_dot",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"DerivedModelDBInfo": "{\"ModelDirectives\":{\"BaseModel\":{\"Name\":\"EnergyCommodityTrading\",\"Version\":\"0.1.0\"}}}",
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://dxcmercuriagen2filesystempoc@dxcmercuriastoragegen.dfs.core.windows.net/EnergyCommodityTrading_dot",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "synapsesqladminuser-WorkspaceDefaultStorage"
+			}
+		}
+	},
+	"type": "DATABASE"
+}
