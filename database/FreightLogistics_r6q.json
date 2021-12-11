@@ -1,0 +1,24 @@
+{
+	"name": "FreightLogistics_r6q",
+	"properties": {
+		"Description": "",
+		"Name": "FreightLogistics_r6q",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"DerivedModelDBInfo": "{\"ModelDirectives\":{\"BaseModel\":{\"Name\":\"FreightLogistics\",\"Version\":\"0.1.0\"}}}",
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://dxcmercuriagen2filesystempoc@dxcmercuriastoragegen.dfs.core.windows.net/FreightLogistics_r6q",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "synapsesqladminuser-WorkspaceDefaultStorage"
+			}
+		}
+	},
+	"type": "DATABASE"
+}
