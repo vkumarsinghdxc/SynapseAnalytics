@@ -1,0 +1,10 @@
+{
+	"name": "us-producer-price-index-commodities",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"sasUri": "https://azureopendatastorage.blob.core.windows.net/laborstatisticscontainer/ppi_commodity/?\"\""
+		}
+	}
+}
