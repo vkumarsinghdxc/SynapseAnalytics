@@ -1,0 +1,24 @@
+{
+	"name": "FundManagement_8xz",
+	"properties": {
+		"Description": "",
+		"Name": "FundManagement_8xz",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"DerivedModelDBInfo": "{\"ModelDirectives\":{\"BaseModel\":{\"Name\":\"FundManagement\",\"Version\":\"0.1.0\"}}}",
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://dxcmercuriagen2filesystempoc@dxcmercuriastoragegen.dfs.core.windows.net/FundManagement_8xz",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "synapsesqladminuser-WorkspaceDefaultStorage"
+			}
+		}
+	},
+	"type": "DATABASE"
+}
