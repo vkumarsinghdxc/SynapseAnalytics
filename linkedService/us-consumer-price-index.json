@@ -1,0 +1,10 @@
+{
+	"name": "us-consumer-price-index",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"sasUri": "https://azureopendatastorage.blob.core.windows.net/laborstatisticscontainer/cpi/?\"\""
+		}
+	}
+}
