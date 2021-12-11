@@ -1,0 +1,1508 @@
+{
+	"name": "PropertyCasualtyInsuranceProduct",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "PropertyCasualtyInsurance_vfc"
+		},
+		"Name": "PropertyCasualtyInsuranceProduct",
+		"Description": "A product is anything that can be offered to a market that might satisfy a want or need by potential customers.    That product is the sum of all physical, psychological, symbolic, and service attributes associated with it.\n\nThere are two basic types of products:\n\n- Tangible (physical)\n- Intangible (non-physical) such as services\n\nA service is a non-material or intangible product - such as professional consultancy, maintenance service, repair service etc.\nEach product has its own benefits, application, brand name, and packaging that gives it its own identity and distinguishing characteristics.\n\nEvery business or organization has business rules that define precisely what a product is.    While we intuitively know what a product is, we must quantify that knowledge and associated business rules with consistent definitions that can be implemented within the organization in strategies and applications.\n\nA product typically goes through five stages of development:\n\n(1) Idea Stage - involving a thorough evaluation of the potential product\n\n(2) Concept Stage - determines customer acceptance by testing and presentation to consumers and distribution channel members.   Specific aspects regarding quality, dependability, reliability, warranty, packaging, service, pricing, terms of sale, sales and distribution channels, advertising and promotions are evaluated.\n\n(3) Product Development Stage - transforms the prototype product into an actual product for mass sale.   This stage requires close interaction between both marketing and manufacturing.\n\n(4) Test Marketing Stage - may or may not be used since it is an expensive and time-consuming process.  Test marketing involves evaluating various product options and alternatives.\n\n(5) Commercialization - It is very expensive to launch a new product so commercialization only applies to those specific products that are actually going to be sold to the market.\n\nProducts tend to be categorized as either:  Industrial goods and consumer goods\n\nIndustrial goods are used to produce other products .\n\nIndustrial goods may be further divided into:\n\n- Raw materials\n- Equipment\n- Pre-built materials \n- Supplies.\n\nConsumer goods are intended for consumption by the general public.\n\nConsumer goods may be further divided into:\n\n- Durable goods\n- Nondurable goods\n- Packaged goods\n\nA product may be a member of a product family or product line.\n\nA product family is a grouping of products or services that are related to each other by common function, functionality, design platform or similar characteristics.\n\nMembers of a product family frequently have many common parts and assemblies.\n\nProduct families are the highest level of grouping for forecasting, capacity planning or related functions.\n\nEx:\nThe Apple Macintosh family of products consists of the product lines:\n- Mac mini\n- MacBook Pro\n- Mac Pro\n\nA product line is a grouping of products that are closely related in usage, functionality or marketing characteristics.\n\nA Product Family typically is created to address one or five functions:\n\n1. To increase profits and not erode the sales of existing products\n\n2. To attract additional Markets or Market Segments\n\n3. To counter competitor's products\n\n4. To fill a gap in an existing Product Family.\n\n5. To promote sales of other products in the family line\n\nLine Depth refers to the number of products in the product line.\n\nLine consistency refers to how closely related the products are that make up the product line.\n\nLine vulnerability refers to the percentage of sales or profits that are derived from only a few products in the product line.\n\nProduct width refers to the number of different product lines sold by a company.\n\nProduct mix refers to the total number of products sold in all product lines.\n\nLine extension refers to the adding of a new product to a line.\n\n\"Trading up or brand leveraging\" refers to adding a product of better quality to a product line than the other products in that line.\n\n\"Trading down\" refers to adding a product of lesser quality to a product line than the other products in that line.\n\nIf a line of products is sold with the same brand name, this is referred to as family branding.\nStrategy and decisions regarding a product line are usually incorporated in a high-level marketing plan addressing product line strategy, sales, channels, distribution channels, pricing and related issues.\nA product-line manager is responsible for a product line and supervises several product managers who are responsible for individual products within the line.\nProduct-line managers typically have the following responsibilities:\n- Expansion and composition of a product line\n- Evaluate the effects of product mixes on the profitability of other items in the line\n- Planning and allocation of resources to individual products in the line\nA product is normally associated with a brand strategy - manufacturer, private or generic.\n\n1. Manufacturer-  or 'national' branding in which the brand is assigned by the manufacturer of the Product.\n\n2. Private - or 'dealer' branding in which the brand is assigned by the retailer or wholesaler of the Product.\n\n3. Generic - in which the Product is not marked with any identification.   Generic brands are a means for manufacturers to increase profits by saving on advertising, packaging or other costs associated with manufacturer or private branding.\n\nA brand is name, term, sign, symbol or design or a combination of these which identify the goods or services and differentiate them from those of competitors'\n\nA Trade mark is a brand or some part of the brand that is given legal protection because it is capable of exclusive appropriation and representation.\n\nManufacturers can use their own brands (known as Manufacturers' brands) or brands of their distributors (Distributors' brands).\n\nManufacturers/ distributors use brand names for a variety of reasons ranging from simple identification purposes to having legal protection for unique features of the products from imitations.\n\nBrands help consumers recognize certain quality parameters. In some cases, brands are just used to endow the product with unique story and character which itself can be a basis for product differentiation.\n\nIndividual brands have their own identity and the corporate or common name is not used to promote its equity.\n\nIndividual branding requires more expensive advertising and brand extensive brand creation investments.  By extension, each new brand does not benefit from the positive perceptions of earlier brands.\n\nBy contrast, family branding has several advantages.\n\nEach new product is quickly associated with the other products and brand in terms of quality and benefits.\n\nReduced or eliminated time for name identification and advertising for name recognition purposes.",
+		"EntityType": "TABLE",
+		"TableType": "EXTERNAL",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"StorageDescriptor": {
+			"Columns": [
+				{
+					"Name": "ProductId",
+					"Description": "The unique identifier of a Product.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "ProductId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					}
+				},
+				{
+					"Name": "ProductName",
+					"Description": "The name of the Product, which normally corresponds to the 'marketing name' of the Product.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "ProductName"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ProductDescription",
+					"Description": "The description of the Product.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "ProductDescription"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 512,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ContestablePeriod",
+					"Description": "The time during which an insurer has the right to cancel or rescind an insurance policy if the application contained a material misrepresentation.   \n\nExpressed in weeks",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "ContestablePeriod"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Precision": 3,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					}
+				},
+				{
+					"Name": "ClaimFilingTimeLimitDays",
+					"Description": "The number of days within which a claim must be filed.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "ClaimFilingTimeLimitDays"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "GracePeriodInDays",
+					"Description": "(1) For insurance premium payments, a specified length of time following a premium due date within which the renewal premium may be paid without penalty. The length of the grace period is specified in a grace period provision that is found in a life insurance, health insurance, or annuity policy. (2) For purchases made on credit, a period of time between the date of a purchase and the date the lender begins to charge interest during which no interest accrues.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "GracePeriodInDays"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "MinimumPremiumAmount",
+					"Description": "The minimum amount of premium that is allowed for a policy provided by an associated insurance product.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "MinimumPremiumAmount"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Precision": 18,
+						"Scale": 2,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					}
+				},
+				{
+					"Name": "MinimumValueForPremiumCalculationAmount",
+					"Description": "The minimum value that can be used for calculation of a premium on a policy provided by an associated insurance product.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "MinimumValueForPremiumCalculationAmount"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Precision": 18,
+						"Scale": 2,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					}
+				},
+				{
+					"Name": "InsuredPartyDefinition",
+					"Description": "The legal definition of \"the insured party\" as related to the insurance product.\n\nEx:\n\"...insured means you and relatives residing in your household...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "InsuredPartyDefinition"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "InsurerPartyDefinition",
+					"Description": "The legal definition of \"the insurer party\" as related to the insurance product.\n\nEx:\n\"...insurer means the company shown in the declarations page of the policy...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "InsurerPartyDefinition"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "AgreementDefinition",
+					"Description": "The legal definition of \"agreement\" as related to the insurance product.\n\nEx:\n\"...in return for payment of the premium and subject to all terms of this policy, we agree with...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "AgreementDefinition"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "CoverageDefinition",
+					"Description": "The legal definition of \"coverage\" as related to the insurance product.\n\nEx:\n\"...we cover the following ...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "CoverageDefinition"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "PremiumChangesDefinition",
+					"Description": "The legal definition of \"premium changes\" as related to the insurance product.\n\nEx:\n\" ...The premium for this policy is based on information...and you agree that if this information changes or is incorrect or incomplete, we may adjust the premium accordingly...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "PremiumChangesDefinition"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "CoverageChangesDefinition",
+					"Description": "The legal definition of \"coverage changes\" as related to the insurance product.\n\nEx:\n\"...when the insurer broadens coverage during the policy period without additional charge this policy will be deemed to provide the additional coverage...any change in your coverage will be made using the rules, rates and for in effect...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "CoverageChangesDefinition"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "AgreementClause",
+					"Description": "A contractual statement regarding the obligations of the insurance provider and the insured.\n\nEx:\n\"...the company agrees to provide the insurance described in this policy.   In return, the insured agrees to pay the premium and comply with the policy terms...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "AgreementClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "CoverageClause",
+					"Description": "A contractual statement regarding \"coverage we will pay\" as related to the insurance product.\n\nEx:\n\"...the insurer will pay when an insured becomes legally obligated to pay for personal injury or property damage caused by an occurrence...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "CoverageClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ChangesToPolicyProvisionsClause",
+					"Description": "A vehicle insurance product statement detailing what occurs in case of changes to information provided to the insurance company that are used to compile premiums, quotes etc.\n\nEx\"\n\"...premium adjustments may be made as a result of a change in ...autos, drivers, coverages, rating territory, eligibility for discounts...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "ChangesToPolicyProvisionsClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "LimitOfLiabilityClause",
+					"Description": "A contractual statement regarding \"limits of liability\" as related to the insurance product.\n\nEx:\n\"...insurer will not pay any amount exceeding the limits shown in the declarations...if no other insurance is required and no other insurance applies to the occurrence, the insured will pay only those amounts which exceed the ...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "LimitOfLiabilityClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ConcealmentOfFraudClause",
+					"Description": "A contractual statement regarding \"concealment of fraud\" as related to the insurance product.\n\nEx:\n\"...insurer does not provide coverage for an insured who has intentionally concealed or misrepresented any material fact or circumstance...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "ConcealmentOfFraudClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ArbitrationClause",
+					"Description": "A vehicle insurance product statement addressing the use of arbitration when no agreement can be come to by the insured and insurer.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "ArbitrationClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ExclusionsClause",
+					"Description": "A vehicle insurance product statement detailing exclusions to the insurance product.\n\nEx:\n\"...we do not provide coverage for any of the following...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "ExclusionsClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "AmountInsurerWillPayClause",
+					"Description": "A contractual statement regarding \"amounts insurer will pay\" as related to the insurance product.\n\nEx:\n\"...insurer will pay only those amounts without our limit of liability which exceed the sum of...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "AmountInsurerWillPayClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "RetainedLimitClause",
+					"Description": "A contractual statement regarding \"retained limit\" as related to the insurance product.\n\nEx:\n\"..the Retained Limit is the amount of damages an insured must assume and pay for any occurrence if no underlying insurance is required and no other insurance applies to the occurrence...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "RetainedLimitClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "WaiverOrChangeOfPolicyProvisionsClause",
+					"Description": "A contractual statement regarding \"waiver of change of policy provisions\" as related to the insurance product.\n\nEx:\n\"...a waiver or change of a provision of this policy must be in writing by insurer to be valid...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "WaiverOrChangeOfPolicyProvisionsClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ExhaustionOfRequiredUnderlyingInsuranceClause",
+					"Description": "A contractual statement regarding \"exhaustion of required underlying insurance\" as related to the insurance product.\n\nEx:\n\"..the insurer will assume control of the settlement or defense of any claim or suit against an insured if ...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "ExhaustionOfRequiredUnderlyingInsuranceClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ConformityToStateStatutesClause",
+					"Description": "A contractual statement regarding \"conformity to state statutes\" as related to the insurance product.\n\nEx:\n\"...when any policy term is in conflict with the law of the state in which the policy is issued then the law of the state will apply...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "ConformityToStateStatutesClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "SubrogationClause",
+					"Description": "A contractual statement regarding \"subrogation\" as related to the insurance product.\n\nEx:\n\"..an insured's right of recovery from anyone else become the insurers up to the amount we have to pay...the insured must protect these rights and assist in enforcement of them...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "SubrogationClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "SeverabilityOfInsuranceClause",
+					"Description": "A contractual statement regarding \"severability of insurance\" as related to the insurance product.\n\nEx:\n\"...this insurance applies separately to each insured.  This condition will not increase our limit of liability for any one occurrence...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "SeverabilityOfInsuranceClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "AssignmentClause",
+					"Description": "A contractual statement regarding \"assignment\" as related to the insurance product.\n\nEx:\n\"..no interest in this policy may be transferred without the insurer's written consent.  If an insured dies, coverage will continue for the rest of the policy term...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "AssignmentClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "DeathClause",
+					"Description": "A contractual statement regarding \"death\" as related to the insurance product.\n\nEx:\n\"...if any person named in the declarations or the spouse dies we insure the...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "DeathClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "DefenseSettlementSupplementaryPaymentClause",
+					"Description": "A contractual statement regarding \"defense, settlement and supplementary payments\" as related to the insurance product.\n\nEx:\n\"..insurer will defend an insured if sued as the result of an occurrence covered by this policy...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "DefenseSettlementSupplementaryPaymentClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "InsurableInterestAndLimitOfLiabilityClause",
+					"Description": "A contractual statement regarding \"insurable interest and limits of liability\" as related to the insurance product.\n\nEx:\n\"...total liability under coverage for all damages will not be more than the limit of liability as shown in the declarations...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "InsurableInterestAndLimitOfLiabilityClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "DutiesAfterLossClause",
+					"Description": "A contractual statement regarding \"duties after loss\" as related to the insurance product.\n\nEx:\n\"...In case of an accident or occurrence, the insured will perform the following duties that apply...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "DutiesAfterLossClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "TerminationProvisionClause",
+					"Description": "A vehicle insurance product statement addressing what happens in the event of a policy termination.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "TerminationProvisionClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "NoticeClause",
+					"Description": "A contractual statement regarding \"notice clause\" as related to the insurance product.\n\nEx:\n\"..the insured must give the insurer prompt written notice of any occurrence...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "NoticeClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "RightOfAppealClause",
+					"Description": "A contractual statement regarding \"right of appeal\" as related to the insurance product.\n\nEx:\n\"..if an insured or any other insurer elects not to appeal a judgment the insurer may do so...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "RightOfAppealClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "NoBenefitToBaileeClause",
+					"Description": "A contractual statement regarding \"No benefit to bailee\" as related to the insurance product.\n\nEx:\n\"...we will not recognize any assignment or grant any coverage that benefits a person or organization holding, storing or moving property for free regardless of any other provision in this policy...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "NoBenefitToBaileeClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "AssistanceAndCooperationClause",
+					"Description": "A contractual statement regarding \"assistance and cooperation\" as related to the insurance product.\n\nEx:\n\"..except as agreed, the insured are not required to settle or defend any claim or suit against an insured..\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "AssistanceAndCooperationClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "SuitAgainstInsurerClause",
+					"Description": "An insurance product statement detailing what occurs in case of legal actions brought against the insurance company.\n\nEx:\n\"...No legal action may be brought against the insurance company until there has been full compliance with all the terms of this policy...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "SuitAgainstInsurerClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "PolicyPeriodClause",
+					"Description": "A contractual statement regarding \"policy period\" as related to the insurance product.\n\nEx:\n\"...this policy applies only to loss, bodily injury or property damage which occurs during the policy period...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "PolicyPeriodClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ClaimsForLossClause",
+					"Description": "A contractual statement regarding \"claims for loss\" as related to the insurance product.\n\nEx:\n\"..the insured will not begin to make payment for any occurrence covered by this policy until our liability has been determined by...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "ClaimsForLossClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "PaymentOfClaimClause",
+					"Description": "A contractual statement regarding \"payment of claim\" as related to the insurance product.\n\nEx:\n\"...payment under this coverage is not an admission of liability by an insured or us...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "PaymentOfClaimClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "AmendmentsWaiversAssignmentClause",
+					"Description": "A contractual statement regarding \"amendments waivers assignment\" as related to the insurance product.\n\nEx:\n\"...this policy cannot be changed nor can any of its provisions be waived without the express written consent of the Federal Insurance Administrator...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "AmendmentsWaiversAssignmentClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "ReductionAndReformationOfCoverageClause",
+					"Description": "A contractual statement regarding \"reduction and reformation of coverage\" as related to the insurance product.\n\nEx:\n\"...if the premium we received was not enough to buy the kind and amount of coverage requested we will provide on the amount of coverage that can be purchased for the premium received...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "ReductionAndReformationOfCoverageClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "PolicyRenewalClause",
+					"Description": "A contractual statement regarding \"policy renewal\" as related to the insurance product.\n\nEx:\n\"...your policy will not be renewed if the community your covered property is located stops participating in the NFIP or�\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "PolicyRenewalClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "InsuranceSuspensionOrRestrictionClause",
+					"Description": "A contractual statement regarding \"insurance suspension or restriction\" as related to the insurance product.\n\nEx:\n\"...insurer is not liable for loss that occurs while there is a hazard that is increased by any means within your control or knowledge...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "InsuranceSuspensionOrRestrictionClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "InsurerOptionsAfterLossClause",
+					"Description": "A contractual statement regarding \"options after a loss\" as related to the insurance product.\n\nEx:\n\"...options insurer may take in sole discretion include...submit to examination under oath...permit us to examine and make extracts and copies of...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "InsurerOptionsAfterLossClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "LossPaymentClause",
+					"Description": "A contractual statement regarding \"loss payment\" as related to the insurance product.\n\nEx:\n\"...we will adjust all losses with you and reach an agreement in which we will pay you unless some other person or entity is named in the policy or is legally entitled...\".\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "LossPaymentClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "AbandonmentClause",
+					"Description": "A contractual statement regarding \"abandonment\" as related to the insurance product.\n\nEx:\n\"...you may not abandon to us damaged or undamaged property insured under this policy...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "AbandonmentClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "SalvageClause",
+					"Description": "A contractual statement regarding \"salvage\" as related to the insurance product.\n\nEx:\n\"...we may permit you to keep damaged insured property after a loss and we will reduce the amount of the loss proceeds payable to you under the policy by the value of the salvage...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "SalvageClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "NuclearHazardClause",
+					"Description": "A contractual statement regarding \"nuclear hazard\" as related to the insurance product.\n\nEx:\n\"...loss covered by nuclear hazard will not be considered loss covered by fire, explosion or smoke and this policy does not apply to...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "NuclearHazardClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "RecoveredPropertyClause",
+					"Description": "A contractual statement regarding \"recovered property\" as related to the insurance product.\n\nEx:\n\"...if you or we recover any property for which we have made payment under this policy...the loss payment will be adjusted based on the amount received...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "RecoveredPropertyClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "LiberalizationClause",
+					"Description": "A contractual statement regarding \"liberalization\" as related to the insurance product.\n\nCondition found in Property insurance contracts that provides that if a law is passed that broadens coverage under a policy form or endorsement without requiring an additional premium, then all existing similar policies or endorsements will be construed to contain the broadened coverage.\n\nEx:\n\"...if insurer adopts a revision which would broaden the coverage under this policy without additional premium within 60 days prior to or during the policy period, the broadened coverage will immediately apply to this policy...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "LiberalizationClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "AutomaticReinstatementClause",
+					"Description": "A contractual statement regarding \"automatic reinstatement clause\" as related to the insurance product. \n\nA stipulation in a Property insurance product which states that after a partial loss covered by the policy has been paid, the original limit of the policy will be automatically reinstated.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "AutomaticReinstatementClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "IncontestabilityClause",
+					"Description": "An insurance and annuity policy clause or provision that limits the time within which an insurer has the right to avoid the contract on the ground of material misrepresentation in the application for the policy",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "IncontestabilityClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "CoinsuranceClause",
+					"Description": "A contractual statement regarding \"coinsurance\" as related to the insurance product.\n\nA clause under which the insured shares in losses to the extent that he is underinsured at the time of loss. The insurer grants a reduced rate to the insured providing he carries insurance 80, 90, or 100% to value. If, at the time of loss, he carries less than required, he must share in his loss. For example, if an insured has a building worth $100,000 and carries an 80% coinsurance clause, it means that he agrees to carry at least $80,000 of insurance. If the insurance carried equaled $60,000, then any loss under the policy would be paid for on the basis of the comparison of $60,000 (amount carried) divided by $80,000 (amount agreed upon in advance) times the amount of the loss. Thus, the insured above would only receive 75% of a loss or $7,500 for a $10,000 loss.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "CoinsuranceClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "DivisibleContractClause",
+					"Description": "A contractual statement regarding \"divisible contract\" as related to the insurance product.\n\nA clause providing that a violation of the conditions of the policy at one insured location will not void the coverage at other locations.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "DivisibleContractClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "FullReportingClause",
+					"Description": "A contractual statement regarding \"full reporting\" as related to the insurance product.\n\nUnder this clause, an insured is required to report values periodically. The clause provides for a penalty to the insured if true values are not reported.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "FullReportingClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "DuplicatePoliciesClause",
+					"Description": "A contractual statement regarding \"duplicate policies\" as related to the insurance product.\n\nEx:\n\"..insurer will not insure your property under more than one NFIP policy...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "DuplicatePoliciesClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "LossSettlementClause",
+					"Description": "A contractual statement regarding \"loss settlement\" as related to the insurance product.\n\nEx:\n\"..this policy provides three methods of settling losses\n1 - Replacement Cost\n2 - Special Loss Settlement\n3 - Actual Cash Value\n...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "LossSettlementClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "OtherTerminationProvisionsClause",
+					"Description": "A vehicle insurance product statement addressing what happens in the event of a policy termination for reasons other than termination, cancellation or nonrenewal.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "OtherTerminationProvisionsClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "TransferOfYourInterestInThisPolicyProvisionsClause",
+					"Description": "A vehicle insurance product statement addressing what happens regarding the assignment or rights and duties under the policy.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "TransferOfYourInterestInThisPolicyProvisionsClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "AppraisalClause",
+					"Description": "A vehicle insurance product statement detailing what occurs in case of legal actions brought against the insurance company.\n\nEx:\n\"...either party may demand an appraisal of loss, in this even...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "AppraisalClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "OtherInsuranceClause",
+					"Description": "A vehicle insurance product statement detailing  coverage in case other coverages exist.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "OtherInsuranceClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "RightToRecoverPaymentClause",
+					"Description": "A vehicle insurance product statement detailing what occurs in case of legal actions brought against the insurance company.\n\nEx:\n\"...if insurer makes a payment under this policy and the person to or for whom payment was made has a right to recover damages from another we shall be subrogated to that right...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "RightToRecoverPaymentClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "InsuranceExclusionsProvisionsClause",
+					"Description": "A vehicle insurance product statement addressing what will not be paid for under the insurance product policy.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "InsuranceExclusionsProvisionsClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "TransferOfInterestClause",
+					"Description": "A vehicle insurance product statement detailing what occurs in case of legal actions brought against the insurance company.\n\nEx:\n\"...your rights, duties under this policy may be not assigned without written consent...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "TransferOfInterestClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "CancellationClause",
+					"Description": "A contractual statement regarding \"cancellation\" as related to the insurance product.\n\nEx:\n\"...you may cancel this policy at any time by writing to us or by letting us known in writing of the date cancellation is to take effect...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "CancellationClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "NonRenewalClause",
+					"Description": "A contractual statement regarding \"non-renewal\" as related to the insurance product.\n\nEx:\n\"...insurer may elect not to renew this policy and may do so by delivering to you...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "NonRenewalClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "AnnuallyRenewableIndicator",
+					"Description": "Indicates whether the insurance product is annually renewable.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "AnnuallyRenewableIndicator"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					}
+				},
+				{
+					"Name": "AssignableInsuranceProductIndicator",
+					"Description": "Indicates whether the insurance product is assignable to another party.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "AssignableInsuranceProductIndicator"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					}
+				},
+				{
+					"Name": "ConditionalInsuranceProductIndicator",
+					"Description": "Indicates whether the insurance product may be conditionally sold.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "ConditionalInsuranceProductIndicator"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					}
+				},
+				{
+					"Name": "ReplacementCostInsuranceIndicator",
+					"Description": "A form of insurance that pays damages equal to the replacement value of damaged property minus depreciation.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "ReplacementCostInsuranceIndicator"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					}
+				},
+				{
+					"Name": "AlliedLinesInsuranceIndicator",
+					"Description": "Property insurance that is usually bought in conjunction with fire insurance; it includes wind, water damage and vandalism coverage.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "AlliedLinesInsuranceIndicator"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					}
+				},
+				{
+					"Name": "AssignedRiskInsuranceProductIndicator",
+					"Description": "Facilities through which drivers can obtain auto insurance if they are unable to buy it in the regular or voluntary market. These are the most well-known type of residual auto insurance market, which exist in every state. In an assigned risk plan, all insurers selling auto insurance in the state are assigned these drivers to insure, based on the amount of insurance they sell in the regular market. (See Residual market)",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "AssignedRiskInsuranceProductIndicator"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					}
+				},
+				{
+					"Name": "RenewableInsuranceProductIndicator",
+					"Description": "An individual health insurance product that requires the insurer to renew the policy-as long as premium payments are made-at least until the insured attains a specified age. The insurer can change premium rates for broad classes of insureds but not for an individual insured. Contrast with noncancellable and guaranteed renewable policy.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "RenewableInsuranceProductIndicator"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					}
+				},
+				{
+					"Name": "BankruptcyOfAnInsuredClause",
+					"Description": "A contractual statement regarding \"bankruptcy of an insured\" as related to the insurance product.\n\nEx:\n\"...bankruptcy or insolvency of an insured will not relieve insurer of obligations under this policy...\"",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "BankruptcyOfAnInsuredClause"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "InsuranceCompanyId",
+					"Description": "The unique identifier of a Customer.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "InsuranceCompanyId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					}
+				},
+				{
+					"Name": "InsuranceLineId",
+					"Description": "The unique identifier of an insurance line.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "InsuranceLineId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "PolicyFormId",
+					"Description": "The unique identifier of a policy form.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "PolicyFormId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ActualCashValueInsuranceProductIndicator",
+					"Description": "A form of insurance that pays damages equal to the replacement value of damaged property minus depreciation.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "ActualCashValueInsuranceProductIndicator"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					}
+				},
+				{
+					"Name": "ClaimsMadeInsuranceProductIndicator",
+					"Description": "A form of insurance that pays claims presented to the insurer during the term of the policy or within a specific term after its expiration. It limits liability insurers' exposure to unknown future liabilities.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "ClaimsMadeInsuranceProductIndicator"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					}
+				},
+				{
+					"Name": "OpenPerilInsuranceProductIndicator",
+					"Description": "An Product that protects the insured from losses caused by any peril that is not specifically excluded by the policy. Also called all risk and special coverage.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "OpenPerilInsuranceProductIndicator"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					}
+				},
+				{
+					"Name": "PackageInsuranceProductIndicator",
+					"Description": "An Product that includes more than one type of insurance coverage. Also called a multi-line policy.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "PackageInsuranceProductIndicator"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					}
+				},
+				{
+					"Name": "MultiplePeriodInsuranceProductIndicator",
+					"Description": "An insurance product that implies package policy including several risks and covered perils. Homeowner Insurance Policies and Business Insurance Policy, are examples of policies providing insurance coverage against several different types of perils. Most often these policies will also include a combination of property insurance and liability coverage. Originally insurance policies separated property and liability coverage. Today, Multiple Peril Policies are common.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "MultiplePeriodInsuranceProductIndicator"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					}
+				},
+				{
+					"Name": "ProductTypeId",
+					"Description": "The unique identifier of a Product Type.",
+					"BaseAttributeReference": {
+						"Entity": "PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct",
+						"Name": "ProductTypeId"
+					},
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				}
+			],
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://dxcmercuriagen2filesystempoc@dxcmercuriastoragegen.dfs.core.windows.net/PropertyCasualtyInsurance_vfc/PropertyCasualtyInsuranceProduct",
+					"delimiter": ",",
+					"multiLine": "false",
+					"firstRowAsHeader": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"quote": "\"",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://dxcmercuriagen2filesystempoc@dxcmercuriastoragegen.dfs.core.windows.net/PropertyCasualtyInsurance_vfc/PropertyCasualtyInsuranceProduct",
+				"Properties": {
+					"LinkedServiceName": "synapsesqladminuser-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"ProductId\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ProductId\"},\"ProductName\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ProductName\"},\"ProductDescription\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ProductDescription\"},\"ContestablePeriod\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ContestablePeriod\"},\"ClaimFilingTimeLimitDays\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ClaimFilingTimeLimitDays\"},\"GracePeriodInDays\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"GracePeriodInDays\"},\"MinimumPremiumAmount\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"MinimumPremiumAmount\"},\"MinimumValueForPremiumCalculationAmount\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"MinimumValueForPremiumCalculationAmount\"},\"InsuredPartyDefinition\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"InsuredPartyDefinition\"},\"InsurerPartyDefinition\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"InsurerPartyDefinition\"},\"AgreementDefinition\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AgreementDefinition\"},\"CoverageDefinition\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"CoverageDefinition\"},\"PremiumChangesDefinition\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"PremiumChangesDefinition\"},\"CoverageChangesDefinition\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"CoverageChangesDefinition\"},\"AgreementClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AgreementClause\"},\"CoverageClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"CoverageClause\"},\"ChangesToPolicyProvisionsClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ChangesToPolicyProvisionsClause\"},\"LimitOfLiabilityClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"LimitOfLiabilityClause\"},\"ConcealmentOfFraudClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ConcealmentOfFraudClause\"},\"ArbitrationClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ArbitrationClause\"},\"ExclusionsClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ExclusionsClause\"},\"AmountInsurerWillPayClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AmountInsurerWillPayClause\"},\"RetainedLimitClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"RetainedLimitClause\"},\"WaiverOrChangeOfPolicyProvisionsClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"WaiverOrChangeOfPolicyProvisionsClause\"},\"ExhaustionOfRequiredUnderlyingInsuranceClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ExhaustionOfRequiredUnderlyingInsuranceClause\"},\"ConformityToStateStatutesClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ConformityToStateStatutesClause\"},\"SubrogationClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"SubrogationClause\"},\"SeverabilityOfInsuranceClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"SeverabilityOfInsuranceClause\"},\"AssignmentClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AssignmentClause\"},\"DeathClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"DeathClause\"},\"DefenseSettlementSupplementaryPaymentClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"DefenseSettlementSupplementaryPaymentClause\"},\"InsurableInterestAndLimitOfLiabilityClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"InsurableInterestAndLimitOfLiabilityClause\"},\"DutiesAfterLossClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"DutiesAfterLossClause\"},\"TerminationProvisionClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"TerminationProvisionClause\"},\"NoticeClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"NoticeClause\"},\"RightOfAppealClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"RightOfAppealClause\"},\"NoBenefitToBaileeClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"NoBenefitToBaileeClause\"},\"AssistanceAndCooperationClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AssistanceAndCooperationClause\"},\"SuitAgainstInsurerClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"SuitAgainstInsurerClause\"},\"PolicyPeriodClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"PolicyPeriodClause\"},\"ClaimsForLossClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ClaimsForLossClause\"},\"PaymentOfClaimClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"PaymentOfClaimClause\"},\"AmendmentsWaiversAssignmentClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AmendmentsWaiversAssignmentClause\"},\"ReductionAndReformationOfCoverageClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ReductionAndReformationOfCoverageClause\"},\"PolicyRenewalClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"PolicyRenewalClause\"},\"InsuranceSuspensionOrRestrictionClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"InsuranceSuspensionOrRestrictionClause\"},\"InsurerOptionsAfterLossClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"InsurerOptionsAfterLossClause\"},\"LossPaymentClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"LossPaymentClause\"},\"AbandonmentClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AbandonmentClause\"},\"SalvageClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"SalvageClause\"},\"NuclearHazardClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"NuclearHazardClause\"},\"RecoveredPropertyClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"RecoveredPropertyClause\"},\"LiberalizationClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"LiberalizationClause\"},\"AutomaticReinstatementClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AutomaticReinstatementClause\"},\"IncontestabilityClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"IncontestabilityClause\"},\"CoinsuranceClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"CoinsuranceClause\"},\"DivisibleContractClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"DivisibleContractClause\"},\"FullReportingClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"FullReportingClause\"},\"DuplicatePoliciesClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"DuplicatePoliciesClause\"},\"LossSettlementClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"LossSettlementClause\"},\"OtherTerminationProvisionsClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"OtherTerminationProvisionsClause\"},\"TransferOfYourInterestInThisPolicyProvisionsClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"TransferOfYourInterestInThisPolicyProvisionsClause\"},\"AppraisalClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AppraisalClause\"},\"OtherInsuranceClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"OtherInsuranceClause\"},\"RightToRecoverPaymentClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"RightToRecoverPaymentClause\"},\"InsuranceExclusionsProvisionsClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"InsuranceExclusionsProvisionsClause\"},\"TransferOfInterestClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"TransferOfInterestClause\"},\"CancellationClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"CancellationClause\"},\"NonRenewalClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"NonRenewalClause\"},\"AnnuallyRenewableIndicator\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AnnuallyRenewableIndicator\"},\"AssignableInsuranceProductIndicator\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AssignableInsuranceProductIndicator\"},\"ConditionalInsuranceProductIndicator\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ConditionalInsuranceProductIndicator\"},\"ReplacementCostInsuranceIndicator\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ReplacementCostInsuranceIndicator\"},\"AlliedLinesInsuranceIndicator\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AlliedLinesInsuranceIndicator\"},\"AssignedRiskInsuranceProductIndicator\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AssignedRiskInsuranceProductIndicator\"},\"RenewableInsuranceProductIndicator\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"RenewableInsuranceProductIndicator\"},\"BankruptcyOfAnInsuredClause\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"BankruptcyOfAnInsuredClause\"},\"InsuranceCompanyId\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"InsuranceCompanyId\"},\"InsuranceLineId\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"InsuranceLineId\"},\"PolicyFormId\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"PolicyFormId\"},\"ActualCashValueInsuranceProductIndicator\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ActualCashValueInsuranceProductIndicator\"},\"ClaimsMadeInsuranceProductIndicator\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ClaimsMadeInsuranceProductIndicator\"},\"OpenPerilInsuranceProductIndicator\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"OpenPerilInsuranceProductIndicator\"},\"PackageInsuranceProductIndicator\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"PackageInsuranceProductIndicator\"},\"MultiplePeriodInsuranceProductIndicator\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"MultiplePeriodInsuranceProductIndicator\"},\"ProductTypeId\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ProductTypeId\"}}}"
+			},
+			"Compressed": false,
+			"IsStoredAsSubdirectories": false
+		},
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"PropertyCasualtyInsuranceProduct\",\"path\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\"},\"description\":\"A product is anything that can be offered to a market that might satisfy a want or need by potential customers.    That product is the sum of all physical, psychological, symbolic, and service attributes associated with it.\\n\\nThere are two basic types of products:\\n\\n- Tangible (physical)\\n- Intangible (non-physical) such as services\\n\\nA service is a non-material or intangible product - such as professional consultancy, maintenance service, repair service etc.\\nEach product has its own benefits, application, brand name, and packaging that gives it its own identity and distinguishing characteristics.\\n\\nEvery business or organization has business rules that define precisely what a product is.    While we intuitively know what a product is, we must quantify that knowledge and associated business rules with consistent definitions that can be implemented within the organization in strategies and applications.\\n\\nA product typically goes through five stages of development:\\n\\n(1) Idea Stage - involving a thorough evaluation of the potential product\\n\\n(2) Concept Stage - determines customer acceptance by testing and presentation to consumers and distribution channel members.   Specific aspects regarding quality, dependability, reliability, warranty, packaging, service, pricing, terms of sale, sales and distribution channels, advertising and promotions are evaluated.\\n\\n(3) Product Development Stage - transforms the prototype product into an actual product for mass sale.   This stage requires close interaction between both marketing and manufacturing.\\n\\n(4) Test Marketing Stage - may or may not be used since it is an expensive and time-consuming process.  Test marketing involves evaluating various product options and alternatives.\\n\\n(5) Commercialization - It is very expensive to launch a new product so commercialization only applies to those specific products that are actually going to be sold to the market.\\n\\nProducts tend to be categorized as either:  Industrial goods and consumer goods\\n\\nIndustrial goods are used to produce other products .\\n\\nIndustrial goods may be further divided into:\\n\\n- Raw materials\\n- Equipment\\n- Pre-built materials \\n- Supplies.\\n\\nConsumer goods are intended for consumption by the general public.\\n\\nConsumer goods may be further divided into:\\n\\n- Durable goods\\n- Nondurable goods\\n- Packaged goods\\n\\nA product may be a member of a product family or product line.\\n\\nA product family is a grouping of products or services that are related to each other by common function, functionality, design platform or similar characteristics.\\n\\nMembers of a product family frequently have many common parts and assemblies.\\n\\nProduct families are the highest level of grouping for forecasting, capacity planning or related functions.\\n\\nEx:\\nThe Apple Macintosh family of products consists of the product lines:\\n- Mac mini\\n- MacBook Pro\\n- Mac Pro\\n\\nA product line is a grouping of products that are closely related in usage, functionality or marketing characteristics.\\n\\nA Product Family typically is created to address one or five functions:\\n\\n1. To increase profits and not erode the sales of existing products\\n\\n2. To attract additional Markets or Market Segments\\n\\n3. To counter competitor's products\\n\\n4. To fill a gap in an existing Product Family.\\n\\n5. To promote sales of other products in the family line\\n\\nLine Depth refers to the number of products in the product line.\\n\\nLine consistency refers to how closely related the products are that make up the product line.\\n\\nLine vulnerability refers to the percentage of sales or profits that are derived from only a few products in the product line.\\n\\nProduct width refers to the number of different product lines sold by a company.\\n\\nProduct mix refers to the total number of products sold in all product lines.\\n\\nLine extension refers to the adding of a new product to a line.\\n\\n\\\"Trading up or brand leveraging\\\" refers to adding a product of better quality to a product line than the other products in that line.\\n\\n\\\"Trading down\\\" refers to adding a product of lesser quality to a product line than the other products in that line.\\n\\nIf a line of products is sold with the same brand name, this is referred to as family branding.\\nStrategy and decisions regarding a product line are usually incorporated in a high-level marketing plan addressing product line strategy, sales, channels, distribution channels, pricing and related issues.\\nA product-line manager is responsible for a product line and supervises several product managers who are responsible for individual products within the line.\\nProduct-line managers typically have the following responsibilities:\\n- Expansion and composition of a product line\\n- Evaluate the effects of product mixes on the profitability of other items in the line\\n- Planning and allocation of resources to individual products in the line\\nA product is normally associated with a brand strategy - manufacturer, private or generic.\\n\\n1. Manufacturer-  or 'national' branding in which the brand is assigned by the manufacturer of the Product.\\n\\n2. Private - or 'dealer' branding in which the brand is assigned by the retailer or wholesaler of the Product.\\n\\n3. Generic - in which the Product is not marked with any identification.   Generic brands are a means for manufacturers to increase profits by saving on advertising, packaging or other costs associated with manufacturer or private branding.\\n\\nA brand is name, term, sign, symbol or design or a combination of these which identify the goods or services and differentiate them from those of competitors'\\n\\nA Trade mark is a brand or some part of the brand that is given legal protection because it is capable of exclusive appropriation and representation.\\n\\nManufacturers can use their own brands (known as Manufacturers' brands) or brands of their distributors (Distributors' brands).\\n\\nManufacturers/ distributors use brand names for a variety of reasons ranging from simple identification purposes to having legal protection for unique features of the products from imitations.\\n\\nBrands help consumers recognize certain quality parameters. In some cases, brands are just used to endow the product with unique story and character which itself can be a basis for product differentiation.\\n\\nIndividual brands have their own identity and the corporate or common name is not used to promote its equity.\\n\\nIndividual branding requires more expensive advertising and brand extensive brand creation investments.  By extension, each new brand does not benefit from the positive perceptions of earlier brands.\\n\\nBy contrast, family branding has several advantages.\\n\\nEach new product is quickly associated with the other products and brand in terms of quality and benefits.\\n\\nReduced or eliminated time for name identification and advertising for name recognition purposes.\",\"primaryKey\":[\"ProductId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"name\":\"ProductId\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ProductId\"},\"dataType\":\"long\"},{\"type\":\"Existing\",\"name\":\"ProductName\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ProductName\"},\"dataType\":\"string\",\"dataTypeLength\":128},{\"type\":\"Existing\",\"name\":\"ProductDescription\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ProductDescription\"},\"dataType\":\"string\",\"dataTypeLength\":512},{\"type\":\"Existing\",\"name\":\"ContestablePeriod\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ContestablePeriod\"},\"dataType\":\"decimal\",\"dataTypeLength\":3,\"scale\":0},{\"type\":\"Existing\",\"name\":\"ClaimFilingTimeLimitDays\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ClaimFilingTimeLimitDays\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"GracePeriodInDays\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"GracePeriodInDays\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"MinimumPremiumAmount\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"MinimumPremiumAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"scale\":2},{\"type\":\"Existing\",\"name\":\"MinimumValueForPremiumCalculationAmount\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"MinimumValueForPremiumCalculationAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"scale\":2},{\"type\":\"Existing\",\"name\":\"InsuredPartyDefinition\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"InsuredPartyDefinition\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"InsurerPartyDefinition\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"InsurerPartyDefinition\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"AgreementDefinition\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AgreementDefinition\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"CoverageDefinition\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"CoverageDefinition\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"PremiumChangesDefinition\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"PremiumChangesDefinition\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"CoverageChangesDefinition\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"CoverageChangesDefinition\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"AgreementClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AgreementClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"CoverageClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"CoverageClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ChangesToPolicyProvisionsClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ChangesToPolicyProvisionsClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"LimitOfLiabilityClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"LimitOfLiabilityClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ConcealmentOfFraudClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ConcealmentOfFraudClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ArbitrationClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ArbitrationClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ExclusionsClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ExclusionsClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"AmountInsurerWillPayClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AmountInsurerWillPayClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"RetainedLimitClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"RetainedLimitClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"WaiverOrChangeOfPolicyProvisionsClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"WaiverOrChangeOfPolicyProvisionsClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ExhaustionOfRequiredUnderlyingInsuranceClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ExhaustionOfRequiredUnderlyingInsuranceClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ConformityToStateStatutesClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ConformityToStateStatutesClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"SubrogationClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"SubrogationClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"SeverabilityOfInsuranceClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"SeverabilityOfInsuranceClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"AssignmentClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AssignmentClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"DeathClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"DeathClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"DefenseSettlementSupplementaryPaymentClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"DefenseSettlementSupplementaryPaymentClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"InsurableInterestAndLimitOfLiabilityClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"InsurableInterestAndLimitOfLiabilityClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"DutiesAfterLossClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"DutiesAfterLossClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"TerminationProvisionClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"TerminationProvisionClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"NoticeClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"NoticeClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"RightOfAppealClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"RightOfAppealClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"NoBenefitToBaileeClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"NoBenefitToBaileeClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"AssistanceAndCooperationClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AssistanceAndCooperationClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"SuitAgainstInsurerClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"SuitAgainstInsurerClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"PolicyPeriodClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"PolicyPeriodClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ClaimsForLossClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ClaimsForLossClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"PaymentOfClaimClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"PaymentOfClaimClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"AmendmentsWaiversAssignmentClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AmendmentsWaiversAssignmentClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"ReductionAndReformationOfCoverageClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ReductionAndReformationOfCoverageClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"PolicyRenewalClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"PolicyRenewalClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"InsuranceSuspensionOrRestrictionClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"InsuranceSuspensionOrRestrictionClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"InsurerOptionsAfterLossClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"InsurerOptionsAfterLossClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"LossPaymentClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"LossPaymentClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"AbandonmentClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AbandonmentClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"SalvageClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"SalvageClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"NuclearHazardClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"NuclearHazardClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"RecoveredPropertyClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"RecoveredPropertyClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"LiberalizationClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"LiberalizationClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"AutomaticReinstatementClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AutomaticReinstatementClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"IncontestabilityClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"IncontestabilityClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"CoinsuranceClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"CoinsuranceClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"DivisibleContractClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"DivisibleContractClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"FullReportingClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"FullReportingClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"DuplicatePoliciesClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"DuplicatePoliciesClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"LossSettlementClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"LossSettlementClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"OtherTerminationProvisionsClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"OtherTerminationProvisionsClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"TransferOfYourInterestInThisPolicyProvisionsClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"TransferOfYourInterestInThisPolicyProvisionsClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"AppraisalClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AppraisalClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"OtherInsuranceClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"OtherInsuranceClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"RightToRecoverPaymentClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"RightToRecoverPaymentClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"InsuranceExclusionsProvisionsClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"InsuranceExclusionsProvisionsClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"TransferOfInterestClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"TransferOfInterestClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"CancellationClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"CancellationClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"NonRenewalClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"NonRenewalClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"AnnuallyRenewableIndicator\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AnnuallyRenewableIndicator\"},\"dataType\":\"boolean\"},{\"type\":\"Existing\",\"name\":\"AssignableInsuranceProductIndicator\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AssignableInsuranceProductIndicator\"},\"dataType\":\"boolean\"},{\"type\":\"Existing\",\"name\":\"ConditionalInsuranceProductIndicator\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ConditionalInsuranceProductIndicator\"},\"dataType\":\"boolean\"},{\"type\":\"Existing\",\"name\":\"ReplacementCostInsuranceIndicator\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ReplacementCostInsuranceIndicator\"},\"dataType\":\"boolean\"},{\"type\":\"Existing\",\"name\":\"AlliedLinesInsuranceIndicator\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AlliedLinesInsuranceIndicator\"},\"dataType\":\"boolean\"},{\"type\":\"Existing\",\"name\":\"AssignedRiskInsuranceProductIndicator\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"AssignedRiskInsuranceProductIndicator\"},\"dataType\":\"boolean\"},{\"type\":\"Existing\",\"name\":\"RenewableInsuranceProductIndicator\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"RenewableInsuranceProductIndicator\"},\"dataType\":\"boolean\"},{\"type\":\"Existing\",\"name\":\"BankruptcyOfAnInsuredClause\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"BankruptcyOfAnInsuredClause\"},\"dataType\":\"string\",\"dataTypeLength\":2048},{\"type\":\"Existing\",\"name\":\"InsuranceCompanyId\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"InsuranceCompanyId\"},\"dataType\":\"long\"},{\"type\":\"Existing\",\"name\":\"InsuranceLineId\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"InsuranceLineId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"PolicyFormId\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"PolicyFormId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"ActualCashValueInsuranceProductIndicator\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ActualCashValueInsuranceProductIndicator\"},\"dataType\":\"boolean\"},{\"type\":\"Existing\",\"name\":\"ClaimsMadeInsuranceProductIndicator\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ClaimsMadeInsuranceProductIndicator\"},\"dataType\":\"boolean\"},{\"type\":\"Existing\",\"name\":\"OpenPerilInsuranceProductIndicator\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"OpenPerilInsuranceProductIndicator\"},\"dataType\":\"boolean\"},{\"type\":\"Existing\",\"name\":\"PackageInsuranceProductIndicator\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"PackageInsuranceProductIndicator\"},\"dataType\":\"boolean\"},{\"type\":\"Existing\",\"name\":\"MultiplePeriodInsuranceProductIndicator\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"MultiplePeriodInsuranceProductIndicator\"},\"dataType\":\"boolean\"},{\"type\":\"Existing\",\"name\":\"ProductTypeId\",\"attributeReference\":{\"entity\":\"PropertyCasualtyInsuranceProduct.cdm.json/PropertyCasualtyInsuranceProduct\",\"name\":\"ProductTypeId\"},\"dataType\":\"integer\"}]}}}",
+			"Description": "A product is anything that can be offered to a market that might satisfy a want or need by potential customers.    That product is the sum of all physical, psychological, symbolic, and service attributes associated with it.\n\nThere are two basic types of products:\n\n- Tangible (physical)\n- Intangible (non-physical) such as services\n\nA service is a non-material or intangible product - such as professional consultancy, maintenance service, repair service etc.\nEach product has its own benefits, application, brand name, and packaging that gives it its own identity and distinguishing characteristics.\n\nEvery business or organization has business rules that define precisely what a product is.    While we intuitively know what a product is, we must quantify that knowledge and associated business rules with consistent definitions that can be implemented within the organization in strategies and applications.\n\nA product typically goes through five stages of development:\n\n(1) Idea Stage - involving a thorough evaluation of the potential product\n\n(2) Concept Stage - determines customer acceptance by testing and presentation to consumers and distribution channel members.   Specific aspects regarding quality, dependability, reliability, warranty, packaging, service, pricing, terms of sale, sales and distribution channels, advertising and promotions are evaluated.\n\n(3) Product Development Stage - transforms the prototype product into an actual product for mass sale.   This stage requires close interaction between both marketing and manufacturing.\n\n(4) Test Marketing Stage - may or may not be used since it is an expensive and time-consuming process.  Test marketing involves evaluating various product options and alternatives.\n\n(5) Commercialization - It is very expensive to launch a new product so commercialization only applies to those specific products that are actually going to be sold to the market.\n\nProducts tend to be categorized as either:  Industrial goods and consumer goods\n\nIndustrial goods are used to produce other products .\n\nIndustrial goods may be further divided into:\n\n- Raw materials\n- Equipment\n- Pre-built materials \n- Supplies.\n\nConsumer goods are intended for consumption by the general public.\n\nConsumer goods may be further divided into:\n\n- Durable goods\n- Nondurable goods\n- Packaged goods\n\nA product may be a member of a product family or product line.\n\nA product family is a grouping of products or services that are related to each other by common function, functionality, design platform or similar characteristics.\n\nMembers of a product family frequently have many common parts and assemblies.\n\nProduct families are the highest level of grouping for forecasting, capacity planning or related functions.\n\nEx:\nThe Apple Macintosh family of products consists of the product lines:\n- Mac mini\n- MacBook Pro\n- Mac Pro\n\nA product line is a grouping of products that are closely related in usage, functionality or marketing characteristics.\n\nA Product Family typically is created to address one or five functions:\n\n1. To increase profits and not erode the sales of existing products\n\n2. To attract additional Markets or Market Segments\n\n3. To counter competitor's products\n\n4. To fill a gap in an existing Product Family.\n\n5. To promote sales of other products in the family line\n\nLine Depth refers to the number of products in the product line.\n\nLine consistency refers to how closely related the products are that make up the product line.\n\nLine vulnerability refers to the percentage of sales or profits that are derived from only a few products in the product line.\n\nProduct width refers to the number of different product lines sold by a company.\n\nProduct mix refers to the total number of products sold in all product lines.\n\nLine extension refers to the adding of a new product to a line.\n\n\"Trading up or brand leveraging\" refers to adding a product of better quality to a product line than the other products in that line.\n\n\"Trading down\" refers to adding a product of lesser quality to a product line than the other products in that line.\n\nIf a line of products is sold with the same brand name, this is referred to as family branding.\nStrategy and decisions regarding a product line are usually incorporated in a high-level marketing plan addressing product line strategy, sales, channels, distribution channels, pricing and related issues.\nA product-line manager is responsible for a product line and supervises several product managers who are responsible for individual products within the line.\nProduct-line managers typically have the following responsibilities:\n- Expansion and composition of a product line\n- Evaluate the effects of product mixes on the profitability of other items in the line\n- Planning and allocation of resources to individual products in the line\nA product is normally associated with a brand strategy - manufacturer, private or generic.\n\n1. Manufacturer-  or 'national' branding in which the brand is assigned by the manufacturer of the Product.\n\n2. Private - or 'dealer' branding in which the brand is assigned by the retailer or wholesaler of the Product.\n\n3. Generic - in which the Product is not marked with any identification.   Generic brands are a means for manufacturers to increase profits by saving on advertising, packaging or other costs associated with manufacturer or private branding.\n\nA brand is name, term, sign, symbol or design or a combination of these which identify the goods or services and differentiate them from those of competitors'\n\nA Trade mark is a brand or some part of the brand that is given legal protection because it is capable of exclusive appropriation and representation.\n\nManufacturers can use their own brands (known as Manufacturers' brands) or brands of their distributors (Distributors' brands).\n\nManufacturers/ distributors use brand names for a variety of reasons ranging from simple identification purposes to having legal protection for unique features of the products from imitations.\n\nBrands help consumers recognize certain quality parameters. In some cases, brands are just used to endow the product with unique story and character which itself can be a basis for product differentiation.\n\nIndividual brands have their own identity and the corporate or common name is not used to promote its equity.\n\nIndividual branding requires more expensive advertising and brand extensive brand creation investments.  By extension, each new brand does not benefit from the positive perceptions of earlier brands.\n\nBy contrast, family branding has several advantages.\n\nEach new product is quickly associated with the other products and brand in terms of quality and benefits.\n\nReduced or eliminated time for name identification and advertising for name recognition purposes.",
+			"DisplayFolderInfo": "{\"name\":\"Product\",\"colorCode\":\"\"}",
+			"PrimaryKeys": "ProductId",
+			"spark.sql.sources.provider": "csv"
+		},
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false
+	},
+	"type": "TABLE"
+}
